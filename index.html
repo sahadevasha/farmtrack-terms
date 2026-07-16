@@ -3,158 +3,791 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms & Conditions - FarmTrack</title>
+    <title>Kisan FarmTrack App — Terms and Conditions</title>
     <style>
-        :root {
-            --primary-color: #2E7D32;
-            --primary-dark: #1B5E20;
-            --bg-color: #F4F9F4;
-            --text-color: #333333;
-            --card-bg: #ffffff;
-            --accent-orange: #FF9800;
-        }
-
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
         }
 
         body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            padding: 20px;
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #f5f7fa;
+            color: #2d3748;
+            line-height: 1.7;
+            padding: 2rem 1rem;
         }
 
         .container {
             max-width: 900px;
             margin: 0 auto;
-            background: var(--card-bg);
-            padding: 40px;
+            background: white;
             border-radius: 16px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+            padding: 2.5rem 2rem;
         }
 
         .header {
             text-align: center;
-            border-bottom: 3px solid var(--primary-color);
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+            margin-bottom: 2.5rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 2rem;
         }
 
         .header h1 {
-            color: var(--primary-dark);
-            font-size: 28px;
-            margin-bottom: 5px;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
         }
 
-        .header p {
-            color: #666;
-            font-size: 14px;
+        .last-updated {
+            display: inline-block;
+            background: #ebf8ff;
+            color: #2b6cb0;
+            padding: 0.4rem 1.2rem;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            margin-top: 0.8rem;
         }
 
-        .content {
-            animation: fadeIn 0.5s ease;
+        .toc {
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 1.5rem 1.8rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .toc h2 {
+            font-size: 1.4rem;
+            color: #2d3748;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #cbd5e0;
+            padding-bottom: 0.5rem;
+        }
+
+        .toc ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 0.5rem;
+        }
+
+        .toc a {
+            text-decoration: none;
+            color: #3182ce;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .toc a:hover {
+            color: #2c5282;
+            text-decoration: underline;
         }
 
         h2 {
-            color: var(--primary-color);
-            font-size: 20px;
-            margin-top: 25px;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            border-left: 4px solid var(--accent-orange);
-            padding-left: 10px;
+            font-size: 1.8rem;
+            color: #1a365d;
+            margin-top: 2.2rem;
+            margin-bottom: 1rem;
+            border-left: 5px solid #38a169;
+            padding-left: 1rem;
+            font-weight: 600;
         }
 
-        ul {
-            margin-left: 20px;
-            margin-bottom: 20px;
+        h3 {
+            font-size: 1.3rem;
+            color: #2d3748;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            color: #4a5568;
+            margin-top: 1.2rem;
+            margin-bottom: 0.6rem;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul, ol {
+            margin: 0.8rem 0 1.2rem 1.8rem;
         }
 
         li {
-            margin-bottom: 10px;
-            text-align: justify;
+            margin-bottom: 0.3rem;
         }
 
-        strong {
-            color: #000;
+        .highlight-box {
+            background: #fffff0;
+            border: 1px solid #ecc94b;
+            border-left: 4px solid #d69e2e;
+            padding: 1rem 1.2rem;
+            border-radius: 8px;
+            margin: 1.2rem 0;
         }
 
-        .footer-note {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #e0e0e0;
-            text-align: center;
-            font-size: 13px;
-            color: #777;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
         }
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+        th {
+            background: #2b6cb0;
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 1rem;
+            text-align: left;
+        }
+
+        td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid #e2e8f0;
+            background: white;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .summary-box {
+            background: linear-gradient(135deg, #f0fff4 0%, #c6f6d5 100%);
+            border: 2px solid #38a169;
+            border-radius: 16px;
+            padding: 1.8rem;
+            margin: 2rem 0;
+        }
+
+        .summary-box h2 {
+            border-left: none;
+            color: #22543d;
+            margin-top: 0;
+            padding-left: 0;
+            font-size: 1.6rem;
+        }
+
+        .rights {
+            background: #f0fff4;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .responsibilities {
+            background: #fff5f5;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+        .contact {
+            background: #ebf8ff;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .contact p {
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: #3182ce;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #e2e8f0;
+            margin: 2rem 0;
+        }
+
+        .back-to-top {
+            display: inline-block;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #718096;
+            text-decoration: none;
+            border: 1px solid #cbd5e0;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            transition: 0.2s;
+        }
+
+        .back-to-top:hover {
+            background: #edf2f7;
+            color: #2d3748;
         }
 
         @media (max-width: 600px) {
             .container {
-                padding: 20px;
+                padding: 1.5rem;
             }
             .header h1 {
-                font-size: 22px;
+                font-size: 1.8rem;
             }
         }
     </style>
 </head>
 <body>
+    <div class="container" id="top">
+        <div class="header">
+            <h1>Kisan FarmTrack App<br>Terms and Conditions</h1>
+            <div class="last-updated">Last Updated: 16 July 2026</div>
+        </div>
 
-<div class="container">
-    <div class="header">
-        <h1>FarmTrack - Terms & Conditions</h1>
-        <p>Last Updated: July 2026</p>
+        <!-- Table of Contents -->
+        <div class="toc">
+            <h2>Contents</h2>
+            <ul>
+                <li><a href="#preamble">Preamble</a></li>
+                <li><a href="#part1">Part 1: App Features & Services</a></li>
+                <li><a href="#part2">Part 2: Registration & Account</a></li>
+                <li><a href="#part3">Part 3: User Content</a></li>
+                <li><a href="#part4">Part 4: E-Commerce & Digital Mandi</a></li>
+                <li><a href="#part5">Part 5: Payment, Fees & Refund</a></li>
+                <li><a href="#part6">Part 6: Advertising Services</a></li>
+                <li><a href="#part7">Part 7: Privacy & Data Protection</a></li>
+                <li><a href="#part8">Part 8: Disclaimer & Liability</a></li>
+                <li><a href="#part9">Part 9: Intellectual Property</a></li>
+                <li><a href="#part10">Part 10: Dispute Resolution</a></li>
+                <li><a href="#part11">Part 11: Miscellaneous</a></li>
+                <li><a href="#part12">Part 12: Contact Information</a></li>
+                <li><a href="#summary">Summary: Rights & Responsibilities</a></li>
+            </ul>
+        </div>
+
+        <!-- Preamble -->
+        <h2 id="preamble">Preamble</h2>
+        <p>Kisan FarmTrack App ("App", "we", "our") is a digital agricultural service platform that provides Indian farmers and agri-businesses with crop management, a digital mandi (marketplace), a Kisan Charcha (farmer discussion) forum, a shop directory, advertising services, and other agriculture-related facilities.</p>
+        <p>Compliance with these Terms and Conditions ("Terms") is mandatory for use of the App. Please read these Terms carefully. By using the App, you fully agree to these Terms. If you do not agree to these Terms, please do not use the App.</p>
+        <p>These Terms are drafted in accordance with the following laws:</p>
+        <ul>
+            <li>Consumer Protection Act, 2019</li>
+            <li>Consumer Protection (E-Commerce) Rules, 2020</li>
+            <li>Information Technology Act, 2000</li>
+            <li>Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021</li>
+            <li>Payment and Settlement Systems Act, 2007</li>
+            <li>Reserve Bank of India UPI Guidelines</li>
+            <li>Advertising Standards Council of India (ASCI) Guidelines</li>
+        </ul>
+
+        <!-- Part 1 -->
+        <h2 id="part1">Part 1: Description of App Features and Services</h2>
+
+        <h3>1.1 Crop Management Dashboard</h3>
+        <p>The App provides farmers the facility to manage their crops digitally. This includes:</p>
+        <ul>
+            <li><strong>Active Crops:</strong> Users can add their chosen crops to the dashboard, entering crop name, planting date, and land size (in acres).</li>
+            <li><strong>Crop Growth Tracking:</strong> Day-by-day progress for each crop is displayed, showing growth stages (Nursery, Vegetative Growth, Flowering Stage, Fruit Development, Harvesting).</li>
+            <li><strong>Task List:</strong> An upcoming task list (such as fertiliser application, irrigation, pesticide spraying) is displayed based on the crop lifecycle. Users can mark tasks as complete/incomplete.</li>
+            <li><strong>Financial Ledger:</strong> Expense (EXPENSE), Income (INCOME), and net profit/loss are tracked for each crop.</li>
+            <li><strong>Automatic Reminders:</strong> Automatic notifications are sent at 7:00 AM and 5:00 PM, reminding farmers of farm-related tasks.</li>
+        </ul>
+
+        <h3>1.2 Digital Mandi (Buy-Sell)</h3>
+        <p>This is a digital marketplace for the buying and selling of agricultural commodities:</p>
+        <ul>
+            <li><strong>Posting Advertisements:</strong> Users can post their crops or agricultural products as "Available for Sale" or "Wanted to Buy".</li>
+            <li><strong>Location-Based Filter:</strong> Users can filter posts by state, district, and tehsil.</li>
+            <li><strong>Contact Facility:</strong> Buyers and sellers can contact each other directly via a "Call" button on each post.</li>
+            <li><strong>Reporting System:</strong> Any suspicious or inappropriate post can be reported by users. Upon receiving three or more reports, the post is automatically placed in "under_review" status.</li>
+        </ul>
+
+        <h3>1.3 Kisan Charcha (Forum)</h3>
+        <p>This is a community platform where farmers can share experiences, questions, and information:</p>
+        <ul>
+            <li><strong>Post Types:</strong> Users can post text, photos (JPG), and videos (MP4).</li>
+            <li><strong>Interaction:</strong> Like, comment, and share features are available on posts.</li>
+            <li><strong>Location-Based Filter:</strong> Users can view posts from their region only.</li>
+            <li><strong>Content Moderation:</strong> Inappropriate posts can be reported. Upon receiving three reports, a post is automatically placed under review.</li>
+        </ul>
+
+        <h3>1.4 Nearby Shops</h3>
+        <p>This is a digital directory of local agricultural shops:</p>
+        <ul>
+            <li><strong>Shop Registration:</strong> Shopkeepers can add their shop details, photo, category, and address.</li>
+            <li><strong>Document Verification:</strong> Shopkeepers can upload documents like Aadhaar, Udyam Registration, GST, etc., to get their shop verified.</li>
+            <li><strong>Product Listing:</strong> Products (items) can be added under each shop.</li>
+            <li><strong>Premium Membership:</strong> Shopkeepers can take a premium membership to make their shop ad-free.</li>
+        </ul>
+
+        <h3>1.5 Advertising Services (VIP Ads / Custom Advertising)</h3>
+        <p>This offers shopkeepers the facility to place targeted advertisements:</p>
+        <ul>
+            <li><strong>Ad Creation:</strong> Shopkeepers can create an advertisement by selecting a banner, target location (state/district/tehsil), and ad unit.</li>
+            <li><strong>Free Trial:</strong> A one-time free trial advertisement is available for new shopkeepers.</li>
+            <li><strong>Paid Advertising:</strong> Payment is required for advertisements after the free trial. ₹149 per unit per month (double the fee for 2000+ products).</li>
+            <li><strong>Performance Analytics:</strong> The number of views and clicks on the advertisement is tracked.</li>
+        </ul>
+
+        <h3>1.6 Mandi Bhav (Market Prices)</h3>
+        <p>This is a community-driven price information platform:</p>
+        <ul>
+            <li><strong>Adding Prices:</strong> Users can add market prices for their area.</li>
+            <li><strong>Upvote/Downvote:</strong> Other users can upvote or downvote the accuracy of the price.</li>
+            <li><strong>Location-Based Filter:</strong> Users can view prices from their selected districts only.</li>
+        </ul>
+
+        <h3>1.7 Kisan Diary</h3>
+        <p>This is a digital diary where farmers can note down daily tasks. Data is backed up to the cloud (Firestore) and is also available offline.</p>
+
+        <h3>1.8 Live Weather Reporting</h3>
+        <p>Users can report real-time weather for their area (Clear, Sunny, Cloudy, Rain, Storm, Thunderstorm, Fog). Reports are valid for 2 hours and are displayed to the community.</p>
+
+        <h3>1.9 Government Schemes</h3>
+        <p>The App displays information on government agricultural schemes, including scheme name, department, benefits, deadline, and application link.</p>
+
+        <h3>1.10 Crop Encyclopedia</h3>
+        <p>Detailed information on various crops is provided — scientific name, climate, soil, varieties, nursery management, fertiliser management, irrigation, weed management, pest and disease control, harvesting and storage.</p>
+
+        <h3>1.11 Disease Identification</h3>
+        <p>Information on identifying crop diseases and their treatment is provided, including disease name, symptoms, and chemical and organic treatments.</p>
+
+        <h3>1.12 Fertilizer Calculator</h3>
+        <p>Users can calculate the required quantity of Urea, DAP, and MOP based on their land size and crop.</p>
+
+        <hr>
+
+        <!-- Part 2 -->
+        <h2 id="part2">Part 2: User Registration and Account</h2>
+
+        <h3>2.1 Registration</h3>
+        <p>Registration is mandatory to use the App. Information required for registration:</p>
+        <ul>
+            <li>Full Name</li>
+            <li>Mobile Number (10 digits) — verified via OTP</li>
+            <li>Password</li>
+            <li>State, District, Tehsil, Address (optional)</li>
+            <li>Email (optional)</li>
+            <li>Date of Birth (optional)</li>
+            <li>Gender (optional)</li>
+        </ul>
+
+        <h3>2.2 Account Security</h3>
+        <p>The user is solely responsible for the security of their account. The password must be kept confidential. In case of unauthorised use of the account, inform us immediately.</p>
+
+        <h3>2.3 Account Suspension and Termination</h3>
+        <p>We may suspend or terminate an account without prior notice under the following circumstances:</p>
+        <ul>
+            <li>Violation of these Terms</li>
+            <li>Fraud or illegal activity</li>
+            <li>Causing harm to other users</li>
+            <li>Government order or legal obligation</li>
+        </ul>
+
+        <h3>2.4 Age Requirement</h3>
+        <p>The user must be at least 18 years of age to use the App.</p>
+
+        <hr>
+
+        <!-- Part 3 -->
+        <h2 id="part3">Part 3: User-Posted Content</h2>
+
+        <h3>3.1 Responsibility for Content</h3>
+        <p>The user is solely and fully responsible for all content posted by them (text, photos, videos, advertisements, product descriptions, mandi prices, etc.). We act as an "Intermediary" and claim safe harbour under Section 79 of the Information Technology Act, 2000 for user-generated content.</p>
+
+        <h3>3.2 Prohibited Content</h3>
+        <p>Posting the following types of content is strictly prohibited:</p>
+        <ul>
+            <li>Obscene, indecent, or objectionable content</li>
+            <li>Infringement of another's intellectual property</li>
+            <li>Fraudulent or misleading information</li>
+            <li>Hateful or communal content</li>
+            <li>Advertising illegal or prohibited items</li>
+            <li>Violation of any person's privacy</li>
+            <li>Threats to cause harm to another</li>
+        </ul>
+        <p><strong>Agriculture-Specific Prohibitions:</strong></p>
+        <ul>
+            <li>Sale of pesticides or restricted chemicals without a licence</li>
+            <li>Advertising fake/counterfeit seeds</li>
+            <li>Sale of agricultural inputs without certification</li>
+        </ul>
+
+        <h3>3.3 Content Removal</h3>
+        <p>We have the right to remove any content without stating a reason. If any content violates these Terms, we will remove it.</p>
+
+        <h3>3.4 Reporting System</h3>
+        <p>Users can report any objectionable content. The reporting process:</p>
+        <ol>
+            <li>User selects the "Report" option</li>
+            <li>Selects the reason for the report</li>
+            <li>The report is sent to the admin panel</li>
+            <li>Upon receiving three or more reports, the content is automatically placed "under review"</li>
+            <li>After review by the admin, the content is either restored or permanently removed</li>
+        </ol>
+
+        <h3>3.5 Grievance Officer</h3>
+        <p>In accordance with the Information Technology (Intermediary Guidelines) Rules, 2021, our Grievance Officer is:</p>
+        <ul>
+            <li><strong>Name:</strong> Sahadev Nirala</li>
+            <li><strong>Email:</strong> support.primecodestudio@gmail.com</li>
+            <li><strong>Timeline:</strong> Complaints will be acknowledged within 72 hours (excluding holidays) of receipt and resolved within 1 month.</li>
+        </ul>
+
+        <hr>
+
+        <!-- Part 4 -->
+        <h2 id="part4">Part 4: E-Commerce and Digital Mandi Rules</h2>
+
+        <h3>4.1 Consumer Protection</h3>
+        <p>Under the Consumer Protection Act, 2019, all users have the following rights:</p>
+        <ul>
+            <li><strong>Right to Safety:</strong> Protection against hazardous or defective products</li>
+            <li><strong>Right to Information:</strong> Receiving correct information about the product</li>
+            <li><strong>Right to Choose:</strong> Choosing from various options</li>
+            <li><strong>Right to be Heard:</strong> Redressal of complaints</li>
+            <li><strong>Right to Redressal:</strong> Redressal against unfair trade practices</li>
+            <li><strong>Right to Consumer Education</strong></li>
+        </ul>
+
+        <h3>4.2 Seller Responsibilities</h3>
+        <p>Users selling products through the Digital Mandi or shop have the following responsibilities:</p>
+        <ul>
+            <li>Providing correct and complete product information</li>
+            <li>Clear display of all charges</li>
+            <li>Displaying safety and health warnings</li>
+            <li>Responsibility for product quality and warranty</li>
+            <li>Responsibility for refund/replacement for any defective or misleading product</li>
+        </ul>
+
+        <h3>4.3 Product Listing and Pricing</h3>
+        <ul>
+            <li>Product description must be true and accurate</li>
+            <li>Price must be displayed correctly and completely</li>
+            <li>Misleading pricing or discount announcements are not allowed</li>
+            <li>No product can be promoted by posing as a consumer</li>
+        </ul>
+
+        <h3>4.4 Accuracy of Community Mandi Prices</h3>
+        <p>Mandi price information is provided by the community. We do not guarantee the accuracy of these prices. Users are advised to independently verify mandi prices before making important trading decisions.</p>
+
+        <hr>
+
+        <!-- Part 5 -->
+        <h2 id="part5">Part 5: Payment, Fees and Refund Policy</h2>
+
+        <h3>5.1 Types of Payment</h3>
+        <p>The following types of payments are taken on the App:</p>
+        <table>
+            <thead>
+                <tr><th>Service</th><th>Fee</th><th>Payment Method</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>VIP Advertising (per unit/month)</td><td>₹149</td><td>UPI</td></tr>
+                <tr><td>VIP Advertising (2000+ products)</td><td>₹298</td><td>UPI</td></tr>
+                <tr><td>Shop Premium Membership (1 month)</td><td>₹99</td><td>UPI</td></tr>
+                <tr><td>Shop Premium (2000+ products)</td><td>₹198</td><td>UPI</td></tr>
+            </tbody>
+        </table>
+
+        <h3>5.2 Payment Process</h3>
+        <ol>
+            <li>User selects a service</li>
+            <li>UPI ID is displayed: farmtrackadmin@ybl</li>
+            <li>User makes payment from their UPI app</li>
+            <li>After payment, the 12-digit UTR/Transaction ID is entered</li>
+            <li>Our team verifies the payment</li>
+            <li>Service is activated after confirmation</li>
+        </ol>
+
+        <h3>5.3 Payment Rules</h3>
+        <ul>
+            <li>All payments are prepaid</li>
+            <li>Payments are accepted via UPI</li>
+            <li>Providing the correct UTR number is mandatory for payment confirmation</li>
+            <li>Service will not be activated if an incorrect UTR number is provided</li>
+            <li>Payment confirmation may take 12-72 hours</li>
+        </ul>
+
+        <h3>5.4 Refund Policy</h3>
+        <p>In accordance with the Consumer Protection (E-Commerce) Rules, 2020:</p>
+        <p><strong>Eligible Refund Cases:</strong></p>
+        <table>
+            <thead>
+                <tr><th>Situation</th><th>Refund Eligibility</th><th>Timeline</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Payment failed due to technical error</td><td>✅ Full Refund</td><td>7-14 business days</td></tr>
+                <tr><td>Service not activated despite correct UTR</td><td>✅ Full Refund</td><td>7-14 business days</td></tr>
+                <tr><td>Amount sent to wrong UPI ID by user</td><td>❌ No Refund</td><td>—</td></tr>
+                <tr><td>Dissatisfaction with service (Subjective)</td><td>❌ No Refund</td><td>—</td></tr>
+                <tr><td>After use of service has commenced</td><td>❌ No Refund</td><td>—</td></tr>
+                <tr><td>Fraud or misuse</td><td>❌ No Refund</td><td>—</td></tr>
+                <tr><td>Service not activated within 7 days of payment</td><td>✅ Full Refund</td><td>7-14 business days</td></tr>
+            </tbody>
+        </table>
+
+        <p><strong>Refund Process:</strong></p>
+        <ol>
+            <li>User sends a refund request to support.primecodestudio@gmail.com</li>
+            <li>Attaches proof of payment (UTR number, screenshot)</li>
+            <li>Our team acknowledges the request within 72 hours (excluding holidays)</li>
+            <li>After verification, a refund is made within 7-14 business days</li>
+            <li>Refund will be made to the same UPI ID from which the payment was received</li>
+        </ol>
+        <div class="highlight-box">
+            <p><strong>Important:</strong> No "No Refund" policy can override the consumer's statutory rights. In the case of defective, misleading, or unsafe product/service, the consumer is entitled to a refund.</p>
+        </div>
+
+        <h3>5.5 RBI UPI Guidelines</h3>
+        <p>As per Reserve Bank of India guidelines:</p>
+        <ul>
+            <li>Refunds for failed UPI transactions must be made within T+1 day</li>
+            <li>Compensation of ₹100 per day for delay</li>
+            <li>Shadow reversal within 10 business days in case of unauthorised transactions</li>
+        </ul>
+
+        <hr>
+
+        <!-- Part 6 -->
+        <h2 id="part6">Part 6: Advertising Services Rules</h2>
+
+        <h3>6.1 Advertising Content Standards</h3>
+        <p>All advertisements must comply with the Advertising Standards Council of India (ASCI) guidelines:</p>
+        <ul>
+            <li>Advertisements must be clearly labelled as "ADVERTISEMENT" or "SPONSORED"</li>
+            <li>Advertisements must not be misleading, exaggerated, or false</li>
+            <li>Advertisements must not contain any obscene, objectionable, or illegal content</li>
+            <li>Safety warnings are mandatory in advertisements for agricultural chemicals</li>
+            <li>False or misleading comparisons about competitors are not allowed</li>
+        </ul>
+
+        <h3>6.2 Ad Verification and Approval</h3>
+        <ul>
+            <li>All advertisements will be reviewed by our team before publication</li>
+            <li>An advertisement can be in "pending", "active", or "rejected" status</li>
+            <li>The fee for rejected advertisements will not be refunded</li>
+            <li>We have the right to reject or remove any advertisement without stating a reason</li>
+        </ul>
+
+        <h3>6.3 Ad Duration and Renewal</h3>
+        <ul>
+            <li>Each ad unit is valid for 1 month (30 days)</li>
+            <li>Payment must be made again for renewal</li>
+            <li>The advertisement will be automatically deactivated upon non-renewal</li>
+        </ul>
+
+        <h3>6.4 Free Trial Rules</h3>
+        <ul>
+            <li>Every shopkeeper is entitled to one free trial advertisement</li>
+            <li>Free trial is valid for 30 days</li>
+            <li>Payment must be made to continue the advertisement after the free trial</li>
+            <li>Abuse of the free trial (by creating multiple accounts) is prohibited</li>
+        </ul>
+
+        <h3>6.5 Ad Performance Data</h3>
+        <ul>
+            <li>The number of views and clicks is displayed</li>
+            <li>This data is approximate and may contain errors</li>
+            <li>We do not guarantee the accuracy of views/clicks</li>
+        </ul>
+
+        <h3>6.6 Premium (Ad-Free) Membership</h3>
+        <ul>
+            <li>Shopkeepers can make their shop ad-free by taking a premium membership</li>
+            <li>Premium membership is valid for 1 month (30 days)</li>
+            <li>Premium membership fee is ₹99/month (₹198/month for 2000+ products)</li>
+            <li>Upon membership expiry, the shop reverts to normal (with ads)</li>
+        </ul>
+
+        <hr>
+
+        <!-- Part 7 -->
+        <h2 id="part7">Part 7: Privacy and Data Protection</h2>
+
+        <h3>7.1 Data Collected</h3>
+        <p>We collect the following data:</p>
+        <ul>
+            <li>User profile information (name, phone, address, etc.)</li>
+            <li>Crop-related data (crops, planting dates, expenses, income)</li>
+            <li>User-generated content (posts, comments, photos, videos)</li>
+            <li>Usage and analytics data</li>
+            <li>Device and location data (with consent)</li>
+        </ul>
+
+        <h3>7.2 Use of Data</h3>
+        <p>The collected data is used for:</p>
+        <ul>
+            <li>Providing App services</li>
+            <li>Improving user experience</li>
+            <li>Giving personalised recommendations</li>
+            <li>Security and fraud prevention</li>
+            <li>Compliance with legal obligations</li>
+        </ul>
+
+        <h3>7.3 Data Security</h3>
+        <p>We take appropriate technical and organisational measures to protect your data. However, no data transmission over the internet is 100% secure.</p>
+
+        <h3>7.4 Third-Party Services</h3>
+        <p>We use the following third-party services:</p>
+        <ul>
+            <li>Firebase / Firestore: Data storage and synchronisation</li>
+            <li>Cloudflare R2: Photo and video storage</li>
+            <li>AdMob: Ad display</li>
+            <li>Google Cloud Functions: Server-side logic</li>
+        </ul>
+
+        <h3>7.5 Data Rights</h3>
+        <p>Users have the following rights:</p>
+        <ul>
+            <li>Access to their data</li>
+            <li>Rectification of data</li>
+            <li>Request for data deletion (along with account termination)</li>
+            <li>Data export</li>
+        </ul>
+
+        <hr>
+
+        <!-- Part 8 -->
+        <h2 id="part8">Part 8: Disclaimer and Limitation of Liability</h2>
+
+        <h3>8.1 Nature of Services</h3>
+        <p>The App is provided on an "As-Is" and "As-Available" basis. We do not guarantee:</p>
+        <ul>
+            <li>Continuity or error-free nature of the service</li>
+            <li>Accuracy, reliability, or completeness of any data</li>
+            <li>Accuracy of any third-party content</li>
+        </ul>
+
+        <h3>8.2 Agricultural Advice</h3>
+        <p>Any information provided on the App (Crop Encyclopedia, Disease Identification, Fertilizer Calculator, Weather Report, Mandi Prices) is for informational purposes only. It is not a substitute for professional agricultural advice. Farmers are advised to consult local agricultural experts before making any significant decisions.</p>
+
+        <h3>8.3 User-Generated Content</h3>
+        <p>We are not responsible for user-generated content (posts, advertisements, mandi prices, comments). We act as an Intermediary.</p>
+
+        <h3>8.4 Limitation of Liability</h3>
+        <p>In no event shall our total liability exceed the amount you have paid us in the preceding 12 months. We shall not be liable for any indirect, incidental, special, or consequential damages.</p>
+
+        <h3>8.5 Force Majeure</h3>
+        <p>We shall not be liable for any disruption of service caused by natural disasters, war, epidemics, government orders, internet outages, or any event beyond our control.</p>
+
+        <hr>
+
+        <!-- Part 9 -->
+        <h2 id="part9">Part 9: Intellectual Property Rights</h2>
+
+        <h3>9.1 Our Property</h3>
+        <p>The App, its design, logo, trademarks, content, and source code are our intellectual property. They may not be copied, modified, or republished without permission.</p>
+
+        <h3>9.2 User Property</h3>
+        <p>Ownership of content posted by the user remains with the user. However, by using the App, you grant us a non-exclusive, royalty-free, worldwide licence to display, distribute, and promote this content on the App.</p>
+
+        <h3>9.3 Third-Party Property</h3>
+        <p>No infringement of any third party's trademarks or copyrights should occur.</p>
+
+        <hr>
+
+        <!-- Part 10 -->
+        <h2 id="part10">Part 10: Dispute Resolution and Legal Provisions</h2>
+
+        <h3>10.1 Governing Law</h3>
+        <p>These Terms shall be governed by Indian law. The jurisdiction for all disputes shall be the courts of Chhattisgarh.</p>
+
+        <h3>10.2 Dispute Resolution Process</h3>
+        <ol>
+            <li><strong>Initial Complaint:</strong> Email support.primecodestudio@gmail.com</li>
+            <li><strong>Internal Resolution:</strong> We will attempt to resolve the complaint within 30 days</li>
+            <li><strong>Consumer Forum:</strong> If unresolved, a complaint can be filed under the Consumer Protection Act, 2019 before the District/State/National Consumer Commission</li>
+            <li><strong>Grievance Appellate Committee:</strong> Under IT Rules, 2021</li>
+        </ol>
+
+        <h3>10.3 Consumer Commissions</h3>
+        <p>As per the Consumer Protection Act, 2019:</p>
+        <table>
+            <thead>
+                <tr><th>Level</th><th>Pecuniary Jurisdiction</th><th>Contact</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>District Commission</td><td>Up to ₹1 Crore</td><td>Concerned District</td></tr>
+                <tr><td>State Commission</td><td>₹1 Crore to ₹10 Crore</td><td>Concerned State</td></tr>
+                <tr><td>National Commission</td><td>Above ₹10 Crore</td><td>New Delhi</td></tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <!-- Part 11 -->
+        <h2 id="part11">Part 11: Miscellaneous Provisions</h2>
+
+        <h3>11.1 Amendments to Terms</h3>
+        <p>We may amend these Terms at any time. The amended Terms will be effective 7 days after being published on the App. Continued use signifies acceptance of the amended Terms.</p>
+
+        <h3>11.2 Severability</h3>
+        <p>If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall remain in effect.</p>
+
+        <h3>11.3 Entire Agreement</h3>
+        <p>These Terms constitute the entire agreement between you and us regarding the use of the App.</p>
+
+        <h3>11.4 Waiver</h3>
+        <p>Failure to exercise any right does not constitute a waiver of that right.</p>
+
+        <hr>
+
+        <!-- Part 12 -->
+        <h2 id="part12">Part 12: Contact Information</h2>
+
+        <div class="contact">
+            <p><strong>Grievance Officer:</strong></p>
+            <ul>
+                <li><strong>Email:</strong> support.primecodestudio@gmail.com</li>
+                <li><strong>Response Time:</strong> 72 hours (excluding holidays)</li>
+            </ul>
+            <p><strong>Technical Support:</strong></p>
+            <ul>
+                <li><strong>Email:</strong> support.primecodestudio@gmail.com</li>
+            </ul>
+            <p><strong>Legal Notices:</strong></p>
+            <ul>
+                <li><strong>Address:</strong> Girahulpali,Dist-Sarangarh-Bilaigarh(CG)</li>
+                <li><strong>Email:</strong> support.primecodestudio@gmail.com</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <!-- Summary -->
+        <div class="summary-box" id="summary">
+            <h2>Summary: User Rights and Responsibilities</h2>
+            <div class="rights">
+                <h4>✅ Your Rights</h4>
+                <ul>
+                    <li>Right to a safe and fair service</li>
+                    <li>Right to correct and complete information</li>
+                    <li>Right to a refund for defective service/product</li>
+                    <li>Right to grievance redressal</li>
+                    <li>Right to privacy and data protection</li>
+                </ul>
+            </div>
+            <div class="responsibilities">
+                <h4>❌ Your Responsibilities</h4>
+                <ul>
+                    <li>Provide correct and true information</li>
+                    <li>Comply with these Terms and the law</li>
+                    <li>Respect the rights of others</li>
+                    <li>Do not post inappropriate or illegal content</li>
+                    <li>Take responsibility for your own payments</li>
+                </ul>
+            </div>
+        </div>
+
+        <p style="text-align: center; margin-top: 2rem; font-weight: 500;">These Terms and Conditions are effective from 16 July 2026.</p>
+        <p style="text-align: center;">Please keep these Terms safe and contact us for any questions.</p>
+
+        <a href="#top" class="back-to-top">↑ Back to Top</a>
     </div>
-
-    <div class="content">
-        <p>Please read these Terms and Conditions carefully before using the FarmTrack mobile application. By accessing or using the app, you agree to be bound by these terms.</p>
-
-        <h2>1. User-Generated Content (Videos, Photos, and Copyright Rules)</h2>
-        <ul>
-            <li><strong>Content Ownership:</strong> FarmTrack is a community-driven platform. Any photos, videos, audio, or text clips uploaded by users under any section (such as Kisan Charcha Forum, Digital Mandi, or Shop Profiles) must be their own original work.</li>
-            <li><strong>Copyright Liability:</strong> The user shall be solely and fully responsible for any copyright infringement resulting from the content they post. If a user uploads media belonging to someone else without proper authorization, FarmTrack, its management, and developers hold zero liability for any legal disputes or financial damages arising from it.</li>
-            <li><strong>Objectionable Content Policy:</strong> Posting explicit, defamatory, violent, racially offensive, or illegal content is strictly prohibited. Violating this rule will lead to an immediate and permanent account suspension without prior notice.</li>
-        </ul>
-
-        <h2>2. Terms for Shop Owners and Product Listings</h2>
-        <ul>
-            <li><strong>Accuracy of Listings:</strong> Store owners listing their local shops or adding products must ensure that all product names, inventory images, descriptions, and dynamic prices are perfectly accurate and genuine. Fraudulent listings will be deleted immediately.</li>
-            <li><strong>Prohibited Products:</strong> Listing banned agricultural medicines, unlicensed seeds, counterfeit chemical products, or any illegal substances prohibited by local government authorities is strictly forbidden.</li>
-            <li><strong>Limitation of Liability for Trades:</strong> FarmTrack operates purely as an intermediary information portal connecting local buyers and sellers. The application does not facilitate, monitor, or guarantee payments, logistics, deliveries, or product quality. All transactions are made purely at the users' own absolute risk and discretion.</li>
-        </ul>
-
-        <h2>3. Digital Mandi and Community Forum Regulations</h2>
-        <ul>
-            <li><strong>Market Rates Disclaimer:</strong> Mandi prices and community insights published inside the application are crowdsourced for mutual agricultural benefit. FarmTrack does not guarantee the exact financial or historical accuracy of these market quotes.</li>
-            <li><strong>Community Guidelines:</strong> Users are forbidden from spamming, deliberately manipulating market rates, executing malicious downvotes, or harassing other community members.</li>
-        </ul>
-
-        <h2>4. User Reporting (UGC Flagging) and Moderation Rights</h2>
-        <ul>
-            <li><strong>Robust Flagging System:</strong> In compliance with Google Play Store Developer Policies, a functional 'Report' mechanism is provided inside the app. Users can seamlessly flag any inappropriate posts, fake items, or suspicious shop profiles.</li>
-            <li><strong>Right to Terminate:</strong> The FarmTrack Administration reserves the absolute right to actively moderate the platform, delete any flagged or objectionable content, and suspend or blacklist user profiles at any time without assigning any prior reason.</li>
-        </ul>
-
-        <h2>5. Privacy and Data Protection</h2>
-        <ul>
-            <li>We collect basic registration variables (such as user name, validated phone number, and coarse location inputs) solely to provide customized regional functionalities. Your profile data is protected securely and is never shared or sold to third-party commercial networks.</li>
-        </ul>
-    </div>
-
-    <div class="footer-note">
-        <p>&copy; 2026 FarmTrack App Ecosystem. All Rights Reserved. | Designed for Google Play Store Policy Compliance.</p>
-    </div>
-</div>
-
 </body>
 </html>
