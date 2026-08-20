@@ -5,7 +5,7 @@
     ],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.farmtrack.kisan",
+      "package_name": "com.farmtrack.app",
       "sha256_cert_fingerprints": [
         "2E:0D:88:DB:02:DC:2F:64:F2:F7:1B:3F:52:81:65:B6:2F:81:77:4C:00:6A:20:37:1E:73:D6:14:F6:B3:17:D2",
         "BC:D1:EB:EA:26:29:67:9E:E3:C1:D9:D1:3F:49:72:04:DC:DC:93:4E:13:76:28:6B:65:F2:B2:02:32:08:EF:1C"
