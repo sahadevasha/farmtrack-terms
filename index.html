@@ -1,770 +1,1486 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Kisan FarmTrack App — Privacy Policy & Terms and Conditions</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kisan FarmTrack — Privacy Policy &amp; Terms and Conditions</title>
+<meta name="description" content="Official Privacy Policy and Terms and Conditions for the Kisan FarmTrack mobile application by Prime Code Studio, India." />
+<style>
+  :root {
+    --green-900: #0f3d24;
+    --green-800: #14532d;
+    --green-700: #15803d;
+    --green-600: #16a34a;
+    --green-500: #22c55e;
+    --green-100: #dcfce7;
+    --green-50:  #f0fdf4;
+    --amber-600: #d97706;
+    --amber-100: #fef3c7;
+    --slate-900: #0f172a;
+    --slate-800: #1e293b;
+    --slate-700: #334155;
+    --slate-600: #475569;
+    --slate-500: #64748b;
+    --slate-200: #e2e8f0;
+    --slate-100: #f1f5f9;
+    --slate-50:  #f8fafc;
+    --white: #ffffff;
+    --radius: 16px;
+    --radius-sm: 10px;
+    --shadow-sm: 0 1px 2px rgba(15, 23, 42, .06), 0 1px 3px rgba(15, 23, 42, .08);
+    --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, .07), 0 10px 24px -6px rgba(15, 23, 42, .12);
+    --shadow-lg: 0 20px 40px -12px rgba(15, 23, 42, .18);
+  }
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  * { box-sizing: border-box; }
 
-        body {
-            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: #f5f7fa;
-            color: #2d3748;
-            line-height: 1.7;
-            padding: 2rem 1rem;
-        }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 16px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
-            padding: 2.5rem 2rem;
-        }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "Noto Sans", "Noto Sans Devanagari", sans-serif;
+    font-size: 16.5px;
+    line-height: 1.75;
+    color: var(--slate-700);
+    background:
+      radial-gradient(1200px 600px at 100% -10%, #dcfce7 0%, rgba(220, 252, 231, 0) 60%),
+      radial-gradient(900px 500px at -10% 10%, #fef3c7 0%, rgba(254, 243, 199, 0) 55%),
+      var(--slate-50);
+    -webkit-font-smoothing: antialiased;
+  }
 
-        .header {
-            text-align: center;
-            margin-bottom: 2.5rem;
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 2rem;
-        }
+  /* ============ HERO ============ */
+  .hero {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(150deg, var(--green-900) 0%, var(--green-700) 55%, var(--green-600) 100%);
+    color: var(--white);
+    padding: 64px 24px 88px;
+    text-align: center;
+  }
+  .hero::before,
+  .hero::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .hero::before {
+    width: 520px; height: 520px;
+    background: radial-gradient(circle, rgba(255,255,255,.16), rgba(255,255,255,0) 70%);
+    top: -220px; right: -140px;
+  }
+  .hero::after {
+    width: 420px; height: 420px;
+    background: radial-gradient(circle, rgba(254, 243, 199, .20), rgba(254,243,199,0) 70%);
+    bottom: -240px; left: -120px;
+  }
+  .hero-inner { position: relative; z-index: 2; max-width: 900px; margin: 0 auto; }
 
-        .header h1 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            color: #1a365d;
-            margin-bottom: 0.5rem;
-            letter-spacing: -0.5px;
-        }
+  .brand-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, .14);
+    border: 1px solid rgba(255, 255, 255, .28);
+    backdrop-filter: blur(6px);
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-size: .82rem;
+    font-weight: 600;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+  }
+  .brand-badge .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: #facc15;
+    box-shadow: 0 0 0 4px rgba(250, 204, 21, .25);
+  }
 
-        .last-updated {
-            display: inline-block;
-            background: #ebf8ff;
-            color: #2b6cb0;
-            padding: 0.4rem 1.2rem;
-            border-radius: 20px;
-            font-weight: 500;
-            font-size: 0.9rem;
-            margin-top: 0.8rem;
-        }
+  .hero h1 {
+    margin: 22px 0 10px;
+    font-size: clamp(2rem, 5vw, 3.1rem);
+    font-weight: 800;
+    letter-spacing: -.02em;
+    line-height: 1.15;
+  }
+  .hero h1 .accent {
+    display: block;
+    font-size: clamp(1.05rem, 2.6vw, 1.5rem);
+    font-weight: 600;
+    color: #bbf7d0;
+    letter-spacing: .01em;
+    margin-top: 12px;
+  }
+  .hero p.sub {
+    margin: 18px auto 0;
+    max-width: 720px;
+    font-size: 1.03rem;
+    color: rgba(255, 255, 255, .88);
+  }
 
-        .toc {
-            background: #f7fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 1.5rem 1.8rem;
-            margin-bottom: 2.5rem;
-        }
+  .meta-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .chip {
+    background: rgba(255, 255, 255, .12);
+    border: 1px solid rgba(255, 255, 255, .24);
+    border-radius: 12px;
+    padding: 10px 18px;
+    font-size: .86rem;
+    font-weight: 600;
+    color: #ecfdf5;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .chip span.label { color: rgba(255,255,255,.7); font-weight: 500; }
 
-        .toc h2 {
-            font-size: 1.4rem;
-            color: #2d3748;
-            margin-bottom: 1rem;
-            border-bottom: 2px solid #cbd5e0;
-            padding-bottom: 0.5rem;
-        }
+  /* ============ LAYOUT ============ */
+  .wrapper {
+    max-width: 1080px;
+    margin: -52px auto 0;
+    padding: 0 20px 80px;
+    position: relative;
+    z-index: 3;
+  }
 
-        .toc ul {
-            list-style: none;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 0.5rem;
-        }
+  .panel {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--slate-200);
+    overflow: hidden;
+  }
 
-        .toc a {
-            text-decoration: none;
-            color: #3182ce;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
+  .panel-head {
+    background: linear-gradient(135deg, #f8fafc, #f0fdf4);
+    border-bottom: 1px solid var(--slate-200);
+    padding: 26px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .panel-head h2 {
+    margin: 0;
+    font-size: 1.16rem;
+    color: var(--green-800);
+    letter-spacing: -.01em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .panel-head .tag {
+    font-size: .74rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--green-700);
+    background: var(--green-100);
+    border-radius: 999px;
+    padding: 6px 14px;
+  }
 
-        .toc a:hover {
-            color: #2c5282;
-            text-decoration: underline;
-        }
+  /* ============ TABLE OF CONTENTS ============ */
+  .toc {
+    padding: 26px 30px 34px;
+  }
+  .toc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px 26px;
+    margin-top: 8px;
+  }
+  .toc a {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 9px 12px;
+    border-radius: var(--radius-sm);
+    color: var(--slate-600);
+    text-decoration: none;
+    font-size: .93rem;
+    line-height: 1.5;
+    transition: background .18s ease, color .18s ease, transform .18s ease;
+    border: 1px solid transparent;
+  }
+  .toc a:hover {
+    background: var(--green-50);
+    color: var(--green-800);
+    border-color: var(--green-100);
+    transform: translateX(3px);
+  }
+  .toc a .num {
+    flex: 0 0 auto;
+    min-width: 26px;
+    height: 26px;
+    border-radius: 8px;
+    background: var(--green-100);
+    color: var(--green-800);
+    font-size: .76rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+  }
+  .toc a:hover .num { background: var(--green-600); color: #fff; }
 
-        h2 {
-            font-size: 1.8rem;
-            color: #1a365d;
-            margin-top: 2.2rem;
-            margin-bottom: 1rem;
-            border-left: 5px solid #38a169;
-            padding-left: 1rem;
-            font-weight: 600;
-        }
+  /* ============ PART DIVIDER ============ */
+  .part-divider {
+    margin: 46px 0 26px;
+    padding: 22px 28px;
+    border-radius: var(--radius);
+    background: linear-gradient(135deg, var(--green-800), var(--green-600));
+    color: #fff;
+    box-shadow: var(--shadow-md);
+    position: relative;
+    overflow: hidden;
+  }
+  .part-divider::after {
+    content: "";
+    position: absolute;
+    width: 260px; height: 260px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,255,.14), rgba(255,255,255,0) 70%);
+    right: -80px; top: -110px;
+  }
+  .part-divider .eyebrow {
+    position: relative;
+    font-size: .74rem;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #bbf7d0;
+    margin: 0 0 6px;
+  }
+  .part-divider h2 {
+    position: relative;
+    margin: 0;
+    font-size: clamp(1.35rem, 3vw, 1.9rem);
+    font-weight: 800;
+    letter-spacing: -.01em;
+  }
+  .part-divider p {
+    position: relative;
+    margin: 8px 0 0;
+    color: rgba(255,255,255,.85);
+    font-size: .95rem;
+  }
 
-        h3 {
-            font-size: 1.3rem;
-            color: #2d3748;
-            margin-top: 1.5rem;
-            margin-bottom: 0.8rem;
-            font-weight: 600;
-        }
+  /* ============ SECTIONS ============ */
+  .card {
+    background: var(--white);
+    border: 1px solid var(--slate-200);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    padding: 30px 32px;
+    margin-bottom: 22px;
+    transition: box-shadow .22s ease, border-color .22s ease;
+  }
+  .card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--green-100);
+  }
+  .card > h2 {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin: 0 0 16px;
+    font-size: clamp(1.1rem, 2.4vw, 1.32rem);
+    font-weight: 800;
+    color: var(--green-900);
+    letter-spacing: -.015em;
+    line-height: 1.4;
+  }
+  .card > h2 .badge {
+    flex: 0 0 auto;
+    min-width: 40px;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--green-700), var(--green-500));
+    color: #fff;
+    font-size: .82rem;
+    font-weight: 800;
+    letter-spacing: .02em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 14px -6px rgba(22, 163, 74, .7);
+    margin-top: 2px;
+  }
 
-        h4 {
-            font-size: 1.1rem;
-            color: #4a5568;
-            margin-top: 1.2rem;
-            margin-bottom: 0.6rem;
-            font-weight: 600;
-        }
+  .card h3 {
+    margin: 26px 0 10px;
+    font-size: 1.02rem;
+    font-weight: 700;
+    color: var(--green-800);
+    letter-spacing: -.005em;
+    padding-left: 14px;
+    border-left: 4px solid var(--green-500);
+    line-height: 1.5;
+  }
 
-        p {
-            margin-bottom: 1rem;
-        }
+  .card p { margin: 0 0 14px; }
+  .card p:last-child { margin-bottom: 0; }
 
-        ul, ol {
-            margin: 0.8rem 0 1.2rem 1.8rem;
-        }
+  .card ul, .card ol {
+    margin: 0 0 16px;
+    padding-left: 0;
+    list-style: none;
+  }
+  .card ul li, .card ol li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 10px;
+  }
+  .card ul li::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: .68em;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--green-500);
+    box-shadow: 0 0 0 3px var(--green-100);
+  }
+  .card ol { counter-reset: item; }
+  .card ol li { counter-increment: item; }
+  .card ol li::before {
+    content: counter(item);
+    position: absolute;
+    left: 0;
+    top: .18em;
+    width: 20px; height: 20px;
+    border-radius: 6px;
+    background: var(--green-100);
+    color: var(--green-800);
+    font-size: .72rem;
+    font-weight: 800;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-        li {
-            margin-bottom: 0.3rem;
-        }
+  strong { color: var(--slate-900); font-weight: 700; }
+  em { color: var(--slate-600); }
 
-        .highlight-box {
-            background: #fffff0;
-            border: 1px solid #ecc94b;
-            border-left: 4px solid #d69e2e;
-            padding: 1rem 1.2rem;
-            border-radius: 8px;
-            margin: 1.2rem 0;
-        }
+  a.inline {
+    color: var(--green-700);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid var(--green-100);
+    word-break: break-word;
+  }
+  a.inline:hover { border-bottom-color: var(--green-500); color: var(--green-800); }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1.2rem 0;
-            font-size: 0.95rem;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        }
+  /* ============ CALLOUTS ============ */
+  .callout {
+    border-radius: var(--radius-sm);
+    padding: 18px 20px 18px 22px;
+    margin: 20px 0;
+    font-size: .95rem;
+    line-height: 1.7;
+    border-left: 5px solid;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  .callout .ct {
+    display: block;
+    font-weight: 800;
+    font-size: .78rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .callout.important {
+    background: var(--amber-100);
+    border-color: var(--amber-600);
+    color: #78350f;
+  }
+  .callout.important .ct { color: #92400e; }
+  .callout.note {
+    background: var(--green-50);
+    border-color: var(--green-500);
+    color: var(--green-900);
+  }
+  .callout.note .ct { color: var(--green-700); }
+  .callout.legal {
+    background: var(--slate-100);
+    border-color: var(--slate-500);
+    color: var(--slate-800);
+  }
+  .callout.legal .ct { color: var(--slate-600); }
 
-        th {
-            background: #2b6cb0;
-            color: white;
-            font-weight: 600;
-            padding: 0.75rem 1rem;
-            text-align: left;
-        }
+  /* ============ TABLE ============ */
+  .table-wrap { overflow-x: auto; margin: 18px 0 22px; border-radius: var(--radius-sm); border: 1px solid var(--slate-200); }
+  table { width: 100%; border-collapse: collapse; font-size: .92rem; min-width: 520px; background: #fff; }
+  thead th {
+    background: linear-gradient(135deg, var(--green-800), var(--green-600));
+    color: #fff;
+    text-align: left;
+    padding: 13px 16px;
+    font-weight: 700;
+    font-size: .82rem;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+  }
+  tbody td { padding: 13px 16px; border-bottom: 1px solid var(--slate-200); vertical-align: top; }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:nth-child(even) { background: var(--slate-50); }
+  tbody tr:hover { background: var(--green-50); }
 
-        td {
-            padding: 0.75rem 1rem;
-            border-bottom: 1px solid #e2e8f0;
-            background: white;
-        }
+  /* ============ CONTACT CARD ============ */
+  .contact-card {
+    background: linear-gradient(150deg, var(--green-900), var(--green-700));
+    color: #fff;
+    border-radius: var(--radius);
+    padding: 40px 34px;
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    overflow: hidden;
+    margin-top: 46px;
+  }
+  .contact-card::before {
+    content: "";
+    position: absolute;
+    width: 380px; height: 380px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,255,.13), rgba(255,255,255,0) 70%);
+    top: -190px; left: -120px;
+  }
+  .contact-card > * { position: relative; }
+  .contact-card h2 { margin: 0 0 8px; font-size: 1.55rem; font-weight: 800; letter-spacing: -.01em; }
+  .contact-card p { margin: 0 auto 20px; max-width: 620px; color: rgba(255,255,255,.85); }
+  .contact-card .mail {
+    display: inline-block;
+    background: #fff;
+    color: var(--green-800);
+    font-weight: 800;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 999px;
+    font-size: 1rem;
+    box-shadow: 0 12px 26px -12px rgba(0,0,0,.55);
+    transition: transform .18s ease, box-shadow .18s ease;
+    word-break: break-word;
+  }
+  .contact-card .mail:hover { transform: translateY(-2px); box-shadow: 0 18px 34px -14px rgba(0,0,0,.6); }
+  .contact-card .org { margin-top: 22px; font-size: .92rem; color: rgba(255,255,255,.75); line-height: 1.8; }
 
-        tr:last-child td {
-            border-bottom: none;
-        }
+  .closing {
+    text-align: center;
+    margin-top: 34px;
+    font-weight: 700;
+    color: var(--green-800);
+    font-size: 1.06rem;
+    letter-spacing: .01em;
+  }
 
-        .summary-box {
-            background: linear-gradient(135deg, #f0fff4 0%, #c6f6d5 100%);
-            border: 2px solid #38a169;
-            border-radius: 16px;
-            padding: 1.8rem;
-            margin: 2rem 0;
-        }
+  footer.doc-footer {
+    text-align: center;
+    padding: 34px 20px 10px;
+    font-size: .85rem;
+    color: var(--slate-500);
+    line-height: 1.9;
+  }
+  footer.doc-footer strong { color: var(--slate-700); }
 
-        .summary-box h2 {
-            border-left: none;
-            color: #22543d;
-            margin-top: 0;
-            padding-left: 0;
-            font-size: 1.6rem;
-        }
+  /* Back-to-top */
+  .to-top {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--green-700), var(--green-500));
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow-md);
+    z-index: 50;
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  .to-top:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
 
-        .rights {
-            background: #f0fff4;
-            padding: 1rem;
-            border-radius: 10px;
-            margin-bottom: 1rem;
-        }
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 720px) {
+    body { font-size: 16px; }
+    .hero { padding: 48px 18px 76px; }
+    .wrapper { padding: 0 14px 60px; margin-top: -44px; }
+    .card { padding: 24px 20px; }
+    .panel-head { padding: 20px; }
+    .toc { padding: 20px; }
+    .part-divider { padding: 20px; }
+    .contact-card { padding: 32px 20px; }
+    .card > h2 { gap: 10px; }
+    .card > h2 .badge { min-width: 34px; height: 34px; font-size: .76rem; border-radius: 10px; }
+    .to-top { right: 14px; bottom: 14px; width: 44px; height: 44px; }
+  }
 
-        .responsibilities {
-            background: #fff5f5;
-            padding: 1rem;
-            border-radius: 10px;
-        }
-
-        .contact {
-            background: #ebf8ff;
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .contact p {
-            margin-bottom: 0.5rem;
-        }
-
-        a {
-            color: #3182ce;
-        }
-
-        hr {
-            border: none;
-            border-top: 1px solid #e2e8f0;
-            margin: 2rem 0;
-        }
-
-        .back-to-top {
-            display: inline-block;
-            margin-top: 2rem;
-            font-size: 0.9rem;
-            color: #718096;
-            text-decoration: none;
-            border: 1px solid #cbd5e0;
-            padding: 0.4rem 1rem;
-            border-radius: 20px;
-            transition: 0.2s;
-        }
-
-        .back-to-top:hover {
-            background: #edf2f7;
-            color: #2d3748;
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                padding: 1.5rem;
-            }
-            .header h1 {
-                font-size: 1.8rem;
-            }
-        }
-    </style>
+  @media print {
+    body { background: #fff; font-size: 11.5pt; }
+    .hero { background: #14532d !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .to-top { display: none; }
+    .card { break-inside: avoid; box-shadow: none; page-break-inside: avoid; }
+    .part-divider { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
 </head>
 <body>
-    <div class="container" id="top">
-        <div class="header">
-            <h1>Kisan FarmTrack App<br>Privacy Policy & Terms and Conditions</h1>
 
-            <div class="last-updated">Last Updated: 16 July 2026</div>
-        </div>
-
-        <!-- Table of Contents -->
-        <div class="toc">
-            <h2>Contents</h2>
-            <ul>
-                <li><a href="#preamble">Preamble</a></li>
-                <li><a href="#part1">Part 1: App Features & Services</a></li>
-                <li><a href="#part2">Part 2: Registration & Account</a></li>
-                <li><a href="#part3">Part 3: User Content</a></li>
-                <li><a href="#part4">Part 4: E-Commerce & Digital Mandi</a></li>
-                <li><a href="#part5">Part 5: Payment, Fees & Refund</a></li>
-                <li><a href="#part6">Part 6: Advertising Services</a></li>
-                <li><a href="#part7">Part 7: Privacy & Data Protection</a></li>
-                <li><a href="#part8">Part 8: Disclaimer & Liability</a></li>
-                <li><a href="#part9">Part 9: Intellectual Property</a></li>
-                <li><a href="#part10">Part 10: Dispute Resolution</a></li>
-                <li><a href="#part11">Part 11: Miscellaneous</a></li>
-                <li><a href="#part12">Part 12: Contact Information</a></li>
-                <li><a href="#summary">Summary: Rights & Responsibilities</a></li>
-            </ul>
-        </div>
-
-        <!-- Preamble -->
-        <h2 id="preamble">Preamble</h2>
-        <p>Kisan FarmTrack App ("App", "we", "our") is a digital agricultural service platform that provides Indian farmers and agri-businesses with crop management, a digital mandi (marketplace), a Kisan Charcha (farmer discussion) forum, a shop directory, advertising services, and other agriculture-related facilities.</p>
-        <p>Compliance with these Terms and Conditions ("Terms") is mandatory for use of the App. Please read these Terms carefully. By using the App, you fully agree to these Terms. If you do not agree to these Terms, please do not use the App.</p>
-        <p>These Terms are drafted in accordance with the following laws:</p>
-        <ul>
-            <li>Consumer Protection Act, 2019</li>
-            <li>Consumer Protection (E-Commerce) Rules, 2020</li>
-            <li>Information Technology Act, 2000</li>
-            <li>Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021</li>
-            <li>Advertising Standards Council of India (ASCI) Guidelines</li>
-        </ul>
-
-        <!-- Part 1 -->
-        <h2 id="part1">Part 1: Description of App Features and Services</h2>
-
-        <h3>1.1 Crop Management Dashboard</h3>
-        <p>The App provides farmers the facility to manage their crops digitally. This includes:</p>
-        <ul>
-            <li><strong>Active Crops:</strong> Users can add their chosen crops to the dashboard, entering crop name, planting date, and land size (in acres).</li>
-            <li><strong>Crop Growth Tracking:</strong> Day-by-day progress for each crop is displayed, showing growth stages (Nursery, Vegetative Growth, Flowering Stage, Fruit Development, Harvesting).</li>
-            <li><strong>Task List:</strong> An upcoming task list (such as fertiliser application, irrigation, pesticide spraying) is displayed based on the crop lifecycle. Users can mark tasks as complete/incomplete.</li>
-            <li><strong>Financial Ledger:</strong> Expense (EXPENSE), Income (INCOME), and net profit/loss are tracked for each crop.</li>
-            <li><strong>Automatic Reminders:</strong> Automatic notifications are sent at 7:00 AM and 5:00 PM, reminding farmers of farm-related tasks.</li>
-        </ul>
-
-        <h3>1.2 Digital Mandi (Buy-Sell)</h3>
-        <p>This is a digital marketplace for the buying and selling of agricultural commodities:</p>
-        <ul>
-            <li><strong>Posting Advertisements:</strong> Users can post their crops or agricultural products as "Available for Sale" or "Wanted to Buy".</li>
-            <li><strong>Location-Based Filter:</strong> Users can filter posts by state, district, and tehsil.</li>
-            <li><strong>Contact Facility:</strong> Buyers and sellers can contact each other directly via a "Call" button on each post.</li>
-            <li><strong>Reporting System:</strong> Any suspicious or inappropriate post can be reported by users. Upon receiving three or more reports, the post is automatically placed in "under_review" status.</li>
-        </ul>
-
-        <h3>1.3 Kisan Charcha (Forum)</h3>
-        <p>This is a community platform where farmers can share experiences, questions, and information:</p>
-        <ul>
-            <li><strong>Post Types:</strong> Users can post text, photos (JPG), and videos (MP4).</li>
-            <li><strong>Interaction:</strong> Like, comment, and share features are available on posts.</li>
-            <li><strong>Location-Based Filter:</strong> Users can view posts from their region only.</li>
-            <li><strong>Content Moderation:</strong> Inappropriate posts can be reported. Upon receiving three reports, a post is automatically placed under review.</li>
-        </ul>
-
-        <h3>1.4 Nearby Shops</h3>
-        <p>This is a digital directory of local agricultural shops:</p>
-        <ul>
-            <li><strong>Shop Registration:</strong> Shopkeepers can add their shop details, photo, category, and address.</li>
-            <li><strong>Document Verification:</strong> Shopkeepers can upload documents like Aadhaar, Udyam Registration, GST, etc., to get their shop verified.</li>
-            <li><strong>Product Listing:</strong> Products (items) can be added under each shop.</li>
-            <li><strong>Premium Membership:</strong> Shopkeepers can take a premium membership to make their shop ad-free.</li>
-        </ul>
-
-        <h3>1.5 Advertising Services (VIP Ads / Custom Advertising)</h3>
-        <p>This offers shopkeepers the facility to place targeted advertisements:</p>
-        <ul>
-            <li><strong>Ad Creation:</strong> Shopkeepers can create an advertisement by selecting a banner, target location (state/district/tehsil), and ad unit.</li>
-            <li><strong>Free Trial:</strong> A one-time free trial advertisement is available for new shopkeepers.</li>
-            <li><strong>Paid Advertising:</strong> Payment is required for advertisements after the free trial. The applicable fee will be displayed clearly during the checkout process.</li>
-            <li><strong>Performance Analytics:</strong> The number of views and clicks on the advertisement is tracked.</li>
-        </ul>
-
-        <h3>1.6 Mandi Bhav (Market Prices)</h3>
-        <p>This is a community-driven price information platform:</p>
-        <ul>
-            <li><strong>Adding Prices:</strong> Users can add market prices for their area.</li>
-            <li><strong>Upvote/Downvote:</strong> Other users can upvote or downvote the accuracy of the price.</li>
-            <li><strong>Location-Based Filter:</strong> Users can view prices from their selected districts only.</li>
-        </ul>
-
-        <h3>1.7 Kisan Diary</h3>
-        <p>This is a digital diary where farmers can note down daily tasks. Data is backed up to the cloud (Firestore) and is also available offline.</p>
-
-        <h3>1.8 Live Weather Reporting</h3>
-        <p>Users can report real-time weather for their area (Clear, Sunny, Cloudy, Rain, Storm, Thunderstorm, Fog). Reports are valid for 2 hours and are displayed to the community.</p>
-
-        <h3>1.9 Government Schemes</h3>
-        <p>The App displays information on government agricultural schemes, including scheme name, department, benefits, deadline, and application link.</p>
-
-        <h3>1.10 Crop Encyclopedia</h3>
-        <p>Detailed information on various crops is provided — scientific name, climate, soil, varieties, nursery management, fertiliser management, irrigation, weed management, pest and disease control, harvesting and storage.</p>
-
-        <h3>1.11 Disease Identification</h3>
-        <p>Information on identifying crop diseases and their treatment is provided, including disease name, symptoms, and chemical and organic treatments.</p>
-
-        <h3>1.12 Fertilizer Calculator</h3>
-        <p>Users can calculate the required quantity of Urea, DAP, and MOP based on their land size and crop.</p>
-
-        <hr>
-
-        <!-- Part 2 -->
-        <h2 id="part2">Part 2: User Registration and Account</h2>
-
-        <h3>2.1 Registration</h3>
-        <p>Registration is mandatory to use the App. Information required for registration:</p>
-        <ul>
-            <li>Full Name</li>
-            <li>Mobile Number (10 digits) — verified via OTP</li>
-            <li>Password</li>
-            <li>State, District, Tehsil, Address (optional)</li>
-            <li>Email (optional)</li>
-            <li>Date of Birth (optional)</li>
-            <li>Gender (optional)</li>
-        </ul>
-
-        <h3>2.2 Account Security</h3>
-        <p>The user is solely responsible for the security of their account. The password must be kept confidential. In case of unauthorised use of the account, inform us immediately.</p>
-
-        <h3>2.3 Account Suspension and Termination</h3>
-        <p>We may suspend or terminate an account without prior notice under the following circumstances:</p>
-        <ul>
-            <li>Violation of these Terms</li>
-            <li>Fraud or illegal activity</li>
-            <li>Causing harm to other users</li>
-            <li>Government order or legal obligation</li>
-        </ul>
-
-        <h3>2.4 Age Requirement</h3>
-        <p>The user must be at least 18 years of age to use the App.</p>
-
-        <hr>
-
-        <!-- Part 3 -->
-        <h2 id="part3">Part 3: User-Posted Content</h2>
-
-        <h3>3.1 Responsibility for Content</h3>
-        <p>The user is solely and fully responsible for all content posted by them (text, photos, videos, advertisements, product descriptions, mandi prices, etc.). We act as an "Intermediary" and claim safe harbour under Section 79 of the Information Technology Act, 2000 for user-generated content.</p>
-
-        <h3>3.2 Prohibited Content</h3>
-        <p>Posting the following types of content is strictly prohibited:</p>
-        <ul>
-            <li>Obscene, indecent, or objectionable content</li>
-            <li>Infringement of another's intellectual property</li>
-            <li>Fraudulent or misleading information</li>
-            <li>Hateful or communal content</li>
-            <li>Advertising illegal or prohibited items</li>
-            <li>Violation of any person's privacy</li>
-            <li>Threats to cause harm to another</li>
-        </ul>
-        <p><strong>Agriculture-Specific Prohibitions:</strong></p>
-        <ul>
-            <li>Sale of pesticides or restricted chemicals without a licence</li>
-            <li>Advertising fake/counterfeit seeds</li>
-            <li>Sale of agricultural inputs without certification</li>
-        </ul>
-
-        <h3>3.3 Content Removal</h3>
-        <p>We have the right to remove any content without stating a reason. If any content violates these Terms, we will remove it.</p>
-
-        <h3>3.4 Reporting System</h3>
-        <p>Users can report any objectionable content. The reporting process:</p>
-        <ol>
-            <li>User selects the "Report" option</li>
-            <li>Selects the reason for the report</li>
-            <li>The report is sent to the admin panel</li>
-            <li>Upon receiving three or more reports, the content is automatically placed "under review"</li>
-            <li>After review by the admin, the content is either restored or permanently removed</li>
-        </ol>
-
-        <h3>3.5 Grievance Officer</h3>
-        <p>In accordance with the Information Technology (Intermediary Guidelines) Rules, 2021, our Grievance Officer is:</p>
-        <ul>
-            <li><strong>Name:</strong> Sahadev Nirala</li>
-            <li><strong>Email:</strong> support.primecodestudio@gmail.com</li>
-            <li><strong>Timeline:</strong> Complaints will be acknowledged within 72 hours (excluding holidays) of receipt and resolved within 1 month.</li>
-        </ul>
-
-        <hr>
-
-        <!-- Part 4 -->
-        <h2 id="part4">Part 4: E-Commerce and Digital Mandi Rules</h2>
-
-        <h3>4.1 Consumer Protection</h3>
-        <p>Under the Consumer Protection Act, 2019, all users have the following rights:</p>
-        <ul>
-            <li><strong>Right to Safety:</strong> Protection against hazardous or defective products</li>
-            <li><strong>Right to Information:</strong> Receiving correct information about the product</li>
-            <li><strong>Right to Choose:</strong> Choosing from various options</li>
-            <li><strong>Right to be Heard:</strong> Redressal of complaints</li>
-            <li><strong>Right to Redressal:</strong> Redressal against unfair trade practices</li>
-            <li><strong>Right to Consumer Education</strong></li>
-        </ul>
-
-        <h3>4.2 Seller Responsibilities</h3>
-        <p>Users selling products through the Digital Mandi or shop have the following responsibilities:</p>
-        <ul>
-            <li>Providing correct and complete product information</li>
-            <li>Clear display of all charges</li>
-            <li>Displaying safety and health warnings</li>
-            <li>Responsibility for product quality and warranty</li>
-            <li>Responsibility for refund/replacement for any defective or misleading product</li>
-        </ul>
-
-        <h3>4.3 Product Listing and Pricing</h3>
-        <ul>
-            <li>Product description must be true and accurate</li>
-            <li>Price must be displayed correctly and completely</li>
-            <li>Misleading pricing or discount announcements are not allowed</li>
-            <li>No product can be promoted by posing as a consumer</li>
-        </ul>
-
-        <h3>4.4 Accuracy of Community Mandi Prices</h3>
-        <p>Mandi price information is provided by the community. We do not guarantee the accuracy of these prices. Users are advised to independently verify mandi prices before making important trading decisions.</p>
-
-        <hr>
-
-        <!-- Part 5 -->
-        <h2 id="part5">Part 5: Payment, Fees and Refund Policy</h2>
-
-        <h3>5.1 Types of Payment & Digital Services</h3>
-        <p>Our App offers certain digital services (such as VIP Advertising and Premium Shop Memberships). Payments for these digital services are processed securely through standardized In-App Purchases (via Google Play Billing) or supported integrated payment gateways, in strict compliance with app store policies.</p>
-        
-        <p><strong>Note for Physical Goods:</strong> For peer-to-peer transactions in the Digital Mandi (buying/selling crops or physical agricultural products), users may use their mutually agreed payment methods (Cash, UPI, etc.). The App does not facilitate or collect payments for physical goods.</p>
-
-        <h3>5.2 Payment Process for App Services</h3>
-        <ol>
-            <li>User selects the desired digital service (e.g., VIP Ad or Premium Membership).</li>
-            <li>The applicable fee is displayed clearly on the screen.</li>
-            <li>User proceeds to checkout using the secure In-App Billing system.</li>
-            <li>Upon successful transaction confirmation from the payment provider, the service is activated automatically.</li>
-        </ol>
-
-        <h3>5.3 Payment Rules</h3>
-        <ul>
-            <li>All payments for digital services are prepaid.</li>
-            <li>Users must ensure they have a stable internet connection during the transaction to avoid interruptions.</li>
-            <li>Pricing is subject to change; the final price displayed at checkout is the applicable fee.</li>
-            <li>Any taxes or levies applicable as per government regulations will be included in the final price.</li>
-        </ul>
-
-        <h3>5.4 Refund Policy</h3>
-        <p>In accordance with the Consumer Protection (E-Commerce) Rules, 2020 and standard digital goods policies:</p>
-        <p><strong>Eligible Refund Cases for Digital Services:</strong></p>
-        <table>
-            <thead>
-                <tr><th>Situation</th><th>Refund Eligibility</th><th>Timeline</th></tr>
-            </thead>
-            <tbody>
-                <tr><td>Payment deducted but service not activated</td><td>✅ Full Refund</td><td>5-7 business days</td></tr>
-                <tr><td>Duplicate payment for the same service</td><td>✅ Full Refund</td><td>5-7 business days</td></tr>
-                <tr><td>Dissatisfaction with ad performance (Subjective)</td><td>❌ No Refund</td><td>—</td></tr>
-                <tr><td>Violation of terms leading to ad rejection</td><td>❌ No Refund</td><td>—</td></tr>
-                <tr><td>Cancellation after using the service</td><td>❌ No Refund</td><td>—</td></tr>
-            </tbody>
-        </table>
-
-        <p><strong>Refund Process:</strong></p>
-        <ol>
-            <li>For In-App Purchases, refunds are primarily handled according to the Google Play Store Refund Policy. Users can request a refund directly through their Google Play account.</li>
-            <li>For direct gateway issues, users can send a refund request to <strong>support.primecodestudio@gmail.com</strong> with the transaction receipt.</li>
-            <li>Our team will acknowledge the request within 72 hours (excluding holidays) and process eligible refunds within 5-7 business days to the original payment method.</li>
-        </ol>
-        
-        <div class="highlight-box">
-            <p><strong>Important:</strong> No "No Refund" policy can override the consumer's statutory rights. In the case of defective, misleading, or unsafe product/service, the consumer is entitled to a fair review and potential refund.</p>
-        </div>
-
-        <hr>
-
-        <!-- Part 6 -->
-        <h2 id="part6">Part 6: Advertising Services Rules</h2>
-
-        <h3>6.1 Advertising Content Standards</h3>
-        <p>All advertisements must comply with the Advertising Standards Council of India (ASCI) guidelines:</p>
-        <ul>
-            <li>Advertisements must be clearly labelled as "ADVERTISEMENT" or "SPONSORED"</li>
-            <li>Advertisements must not be misleading, exaggerated, or false</li>
-            <li>Advertisements must not contain any obscene, objectionable, or illegal content</li>
-            <li>Safety warnings are mandatory in advertisements for agricultural chemicals</li>
-            <li>False or misleading comparisons about competitors are not allowed</li>
-        </ul>
-
-        <h3>6.2 Ad Verification and Approval</h3>
-        <ul>
-            <li>All advertisements will be reviewed by our team before publication</li>
-            <li>An advertisement can be in "pending", "active", or "rejected" status</li>
-            <li>The fee for rejected advertisements will not be refunded</li>
-            <li>We have the right to reject or remove any advertisement without stating a reason</li>
-        </ul>
-
-        <h3>6.3 Ad Duration and Renewal</h3>
-        <ul>
-            <li>Each ad unit is valid for 1 month (30 days)</li>
-            <li>Payment must be made again for renewal</li>
-            <li>The advertisement will be automatically deactivated upon non-renewal</li>
-        </ul>
-
-        <h3>6.4 Free Trial Rules</h3>
-        <ul>
-            <li>Every shopkeeper is entitled to one free trial advertisement</li>
-            <li>Free trial is valid for 30 days</li>
-            <li>Payment must be made to continue the advertisement after the free trial</li>
-            <li>Abuse of the free trial (by creating multiple accounts) is prohibited</li>
-        </ul>
-
-        <h3>6.5 Ad Performance Data</h3>
-        <ul>
-            <li>The number of views and clicks is displayed</li>
-            <li>This data is approximate and may contain errors</li>
-            <li>We do not guarantee the accuracy of views/clicks</li>
-        </ul>
-
-        <h3>6.6 Premium (Ad-Free) Membership</h3>
-        <ul>
-            <li>Shopkeepers can make their shop ad-free by taking a premium membership</li>
-            <li>Premium membership is valid for 1 month (30 days)</li>
-            <li>The premium membership fee will be clearly displayed on the purchase screen inside the App</li>
-            <li>Upon membership expiry, the shop reverts to normal (with ads)</li>
-        </ul>
-
-        <hr>
-
-        <!-- Part 7 -->
-        <h2 id="part7">Part 7: Privacy and Data Protection</h2>
-
-        <h3>7.1 Data Collected</h3>
-        <p>We collect the following data:</p>
-        <ul>
-            <li>User profile information (name, phone, address, etc.)</li>
-            <li>Crop-related data (crops, planting dates, expenses, income)</li>
-            <li>User-generated content (posts, comments, photos, videos)</li>
-            <li>Usage and analytics data</li>
-            <li>Device and location data (with consent)</li>
-        </ul>
-
-        <h3>7.2 Use of Data</h3>
-        <p>The collected data is used for:</p>
-        <ul>
-            <li>Providing App services</li>
-            <li>Improving user experience</li>
-            <li>Giving personalised recommendations</li>
-            <li>Security and fraud prevention</li>
-            <li>Compliance with legal obligations</li>
-        </ul>
-
-        <h3>7.3 Data Security</h3>
-        <p>We take appropriate technical and organisational measures to protect your data. However, no data transmission over the internet is 100% secure.</p>
-
-        <h3>7.4 Third-Party Services</h3>
-        <p>We use the following third-party services:</p>
-        <ul>
-            <li>Firebase / Firestore: Data storage and synchronisation</li>
-            <li>Cloudflare R2: Photo and video storage</li>
-            <li>AdMob: Ad display</li>
-            <li>Google Cloud Functions: Server-side logic</li>
-        </ul>
-
-        <h3>7.5 Data Rights</h3>
-        <p>Users have the following rights:</p>
-        <ul>
-            <li>Access to their data</li>
-            <li>Rectification of data</li>
-            <li>Request for data deletion (along with account termination)</li>
-            <li>Data export</li>
-        </ul>
-
-        <hr>
-
-        <!-- Part 8 -->
-        <h2 id="part8">Part 8: Disclaimer and Limitation of Liability</h2>
-
-        <h3>8.1 Nature of Services</h3>
-        <p>The App is provided on an "As-Is" and "As-Available" basis. We do not guarantee:</p>
-        <ul>
-            <li>Continuity or error-free nature of the service</li>
-            <li>Accuracy, reliability, or completeness of any data</li>
-            <li>Accuracy of any third-party content</li>
-        </ul>
-
-        <h3>8.2 Agricultural Advice</h3>
-        <p>Any information provided on the App (Crop Encyclopedia, Disease Identification, Fertilizer Calculator, Weather Report, Mandi Prices) is for informational purposes only. It is not a substitute for professional agricultural advice. Farmers are advised to consult local agricultural experts before making any significant decisions.</p>
-
-        <h3>8.3 User-Generated Content</h3>
-        <p>We are not responsible for user-generated content (posts, advertisements, mandi prices, comments). We act as an Intermediary.</p>
-
-        <h3>8.4 Limitation of Liability</h3>
-        <p>In no event shall our total liability exceed the amount you have paid us in the preceding 12 months. We shall not be liable for any indirect, incidental, special, or consequential damages.</p>
-
-        <h3>8.5 Force Majeure</h3>
-        <p>We shall not be liable for any disruption of service caused by natural disasters, war, epidemics, government orders, internet outages, or any event beyond our control.</p>
-
-        <hr>
-
-        <!-- Part 9 -->
-        <h2 id="part9">Part 9: Intellectual Property Rights</h2>
-
-        <h3>9.1 Our Property</h3>
-        <p>The App, its design, logo, trademarks, content, and source code are our intellectual property. They may not be copied, modified, or republished without permission.</p>
-
-        <h3>9.2 User Property</h3>
-        <p>Ownership of content posted by the user remains with the user. However, by using the App, you grant us a non-exclusive, royalty-free, worldwide licence to display, distribute, and promote this content on the App.</p>
-
-        <h3>9.3 Third-Party Property</h3>
-        <p>No infringement of any third party's trademarks or copyrights should occur.</p>
-
-        <hr>
-
-        <!-- Part 10 -->
-        <h2 id="part10">Part 10: Dispute Resolution and Legal Provisions</h2>
-
-        <h3>10.1 Governing Law</h3>
-        <p>These Terms shall be governed by Indian law. The jurisdiction for all disputes shall be the courts of Chhattisgarh.</p>
-
-        <h3>10.2 Dispute Resolution Process</h3>
-        <ol>
-            <li><strong>Initial Complaint:</strong> Email support.primecodestudio@gmail.com</li>
-            <li><strong>Internal Resolution:</strong> We will attempt to resolve the complaint within 30 days</li>
-            <li><strong>Consumer Forum:</strong> If unresolved, a complaint can be filed under the Consumer Protection Act, 2019 before the District/State/National Consumer Commission</li>
-            <li><strong>Grievance Appellate Committee:</strong> Under IT Rules, 2021</li>
-        </ol>
-
-        <h3>10.3 Consumer Commissions</h3>
-        <p>As per the Consumer Protection Act, 2019:</p>
-        <table>
-            <thead>
-                <tr><th>Level</th><th>Pecuniary Jurisdiction</th><th>Contact</th></tr>
-            </thead>
-            <tbody>
-                <tr><td>District Commission</td><td>Up to ₹1 Crore</td><td>Concerned District</td></tr>
-                <tr><td>State Commission</td><td>₹1 Crore to ₹10 Crore</td><td>Concerned State</td></tr>
-                <tr><td>National Commission</td><td>Above ₹10 Crore</td><td>New Delhi</td></tr>
-            </tbody>
-        </table>
-
-        <hr>
-
-        <!-- Part 11 -->
-        <h2 id="part11">Part 11: Miscellaneous Provisions</h2>
-
-        <h3>11.1 Amendments to Terms</h3>
-        <p>We may amend these Terms at any time. The amended Terms will be effective 7 days after being published on the App. Continued use signifies acceptance of the amended Terms.</p>
-
-        <h3>11.2 Severability</h3>
-        <p>If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall remain in effect.</p>
-
-        <h3>11.3 Entire Agreement</h3>
-        <p>These Terms constitute the entire agreement between you and us regarding the use of the App.</p>
-
-        <h3>11.4 Waiver</h3>
-        <p>Failure to exercise any right does not constitute a waiver of that right.</p>
-
-        <hr>
-
-        <!-- Part 12 -->
-        <h2 id="part12">Part 12: Contact Information</h2>
-
-        <div class="contact">
-            <p><strong>Grievance Officer:</strong></p>
-            <ul>
-                <li><strong>Email:</strong> support.primecodestudio@gmail.com</li>
-                <li><strong>Response Time:</strong> 72 hours (excluding holidays)</li>
-            </ul>
-            <p><strong>Technical Support:</strong></p>
-            <ul>
-                <li><strong>Email:</strong> support.primecodestudio@gmail.com</li>
-            </ul>
-            <p><strong>Legal Notices:</strong></p>
-            <ul>
-                <li><strong>Address:</strong> Girahulpali, Dist-Sarangarh-Bilaigarh (CG)</li>
-                <li><strong>Email:</strong> support.primecodestudio@gmail.com</li>
-            </ul>
-        </div>
-
-        <hr>
-
-        <!-- Summary -->
-        <div class="summary-box" id="summary">
-            <h2>Summary: User Rights and Responsibilities</h2>
-            <div class="rights">
-                <h4>✅ Your Rights</h4>
-                <ul>
-                    <li>Right to a safe and fair service</li>
-                    <li>Right to correct and complete information</li>
-                    <li>Right to a refund for defective service/product</li>
-                    <li>Right to grievance redressal</li>
-                    <li>Right to privacy and data protection</li>
-                </ul>
-            </div>
-            <div class="responsibilities">
-                <h4>❌ Your Responsibilities</h4>
-                <ul>
-                    <li>Provide correct and true information</li>
-                    <li>Comply with these Terms and the law</li>
-                    <li>Respect the rights of others</li>
-                    <li>Do not post inappropriate or illegal content</li>
-                    <li>Take responsibility for your own payments</li>
-                </ul>
-            </div>
-        </div>
-
-        <p style="text-align: center; margin-top: 2rem; font-weight: 500;">These Terms and Conditions are effective from 16 July 2026.</p>
-        <p style="text-align: center;">Please keep these Terms safe and contact us for any questions.</p>
-
-        <a href="#top" class="back-to-top">↑ Back to Top</a>
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="brand-badge">
+      <span class="dot"></span>
+      Prime Code Studio &nbsp;•&nbsp; India
     </div>
+
+    <h1>
+      Kisan FarmTrack
+      <span class="accent">Privacy Policy &amp; Terms and Conditions</span>
+    </h1>
+
+    <p class="sub">
+      A complete, transparent and detailed disclosure of what information we collect,
+      why we collect it, how we use, store and protect it — and the rights you hold over your own data.
+    </p>
+
+    <div class="meta-chips">
+      <div class="chip"><span class="label">Last Updated:</span> 24 September 2026</div>
+      <div class="chip"><span class="label">Effective Date:</span> 25 September 2026</div>
+      <div class="chip"><span class="label">Version:</span> 1.1</div>
+      <div class="chip"><span class="label">Package:</span> com.farmtrack.kisan</div>
+    </div>
+  </div>
+</header>
+
+<div class="wrapper">
+
+  <!-- ================= TABLE OF CONTENTS ================= -->
+  <nav class="panel" aria-label="Table of Contents">
+    <div class="panel-head">
+      <h2>📑 Table of Contents</h2>
+      <span class="tag">Quick Navigation</span>
+    </div>
+    <div class="toc">
+      <div class="toc-grid">
+        <a href="#p1"><span class="num">1</span><span>Introduction and Overview</span></a>
+        <a href="#p2"><span class="num">2</span><span>About Us and How to Contact Us</span></a>
+        <a href="#p3"><span class="num">3</span><span>Acceptance of and Consent to This Policy</span></a>
+        <a href="#p4"><span class="num">4</span><span>What Information We Collect</span></a>
+        <a href="#p5"><span class="num">5</span><span>How We Collect Information</span></a>
+        <a href="#p6"><span class="num">6</span><span>How We Use Your Information</span></a>
+        <a href="#p7"><span class="num">7</span><span>Rules for Sharing Information</span></a>
+        <a href="#p8"><span class="num">8</span><span>Third-Party Services and Their Privacy Policies</span></a>
+        <a href="#p9"><span class="num">9</span><span>Storage and Security of Information</span></a>
+        <a href="#p10"><span class="num">10</span><span>Information Retention Period</span></a>
+        <a href="#p11"><span class="num">11</span><span>Your Rights</span></a>
+        <a href="#p12"><span class="num">12</span><span>Children's Privacy</span></a>
+        <a href="#p13"><span class="num">13</span><span>Permissions</span></a>
+        <a href="#p14"><span class="num">14</span><span>Changes to This Privacy Policy</span></a>
+        <a href="#t1"><span class="num">T1</span><span>Definitions and Interpretation</span></a>
+        <a href="#t2"><span class="num">T2</span><span>Acceptance of Terms</span></a>
+        <a href="#t3"><span class="num">T3</span><span>Eligibility and Qualification</span></a>
+        <a href="#t4"><span class="num">T4</span><span>Account Registration and Security</span></a>
+        <a href="#t5"><span class="num">T5</span><span>User Responsibilities</span></a>
+        <a href="#t6"><span class="num">T6</span><span>Acceptable Use and Restrictions</span></a>
+        <a href="#t7"><span class="num">T7</span><span>Content Rules and Responsibility</span></a>
+        <a href="#t8"><span class="num">T8</span><span>Intellectual Property Rights</span></a>
+        <a href="#t9"><span class="num">T9</span><span>Third-Party Services and Content</span></a>
+        <a href="#t10"><span class="num">T10</span><span>Payments and Refunds</span></a>
+        <a href="#t11"><span class="num">T11</span><span>Special Terms for the VIP Advertising Service</span></a>
+        <a href="#t12"><span class="num">T12</span><span>Service Availability and Changes</span></a>
+        <a href="#t13"><span class="num">T13</span><span>Disclaimer</span></a>
+        <a href="#t14"><span class="num">T14</span><span>Limitation of Liability</span></a>
+        <a href="#t15"><span class="num">T15</span><span>Indemnification</span></a>
+        <a href="#t16"><span class="num">T16</span><span>Account Suspension and Termination</span></a>
+        <a href="#t17"><span class="num">T17</span><span>Governing Law and Jurisdiction</span></a>
+        <a href="#t18"><span class="num">T18</span><span>Dispute Resolution Process</span></a>
+        <a href="#t19"><span class="num">T19</span><span>Notices and Contact</span></a>
+        <a href="#t20"><span class="num">T20</span><span>Other Provisions</span></a>
+        <a href="#t21"><span class="num">T21</span><span>Final Provision and Acceptance</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= PART I ================= -->
+  <div class="part-divider" id="part1">
+    <p class="eyebrow">Part One</p>
+    <h2>Kisan FarmTrack — Privacy Policy</h2>
+    <p>Detailed Privacy Policy of the Kisan FarmTrack mobile application.</p>
+  </div>
+
+  <!-- Section 1 -->
+  <section class="card" id="p1">
+    <h2><span class="badge">1</span> Introduction and Overview</h2>
+
+    <p>
+      This Privacy Policy has been prepared by <strong>Prime Code Studio</strong> — the operator, owner and developer of the
+      <strong>Kisan FarmTrack</strong> mobile application, whose registered office is located in the State of Chhattisgarh, India.
+      This Policy presents a detailed and transparent account of what information we collect from you, the purposes for which we
+      collect it, and how we use, store, process and secure it, as well as the rights that remain reserved with you in relation
+      to your information.
+    </p>
+
+    <p>
+      This Privacy Policy has been drafted in conformity with the <strong>Information Technology Act, 2000</strong>, the
+      <strong>Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011</strong>,
+      the <strong>Digital Personal Data Protection Act, 2023</strong>, the <strong>Consumer Protection Act, 2019</strong>, and all
+      policies of the Google Play Store currently in force.
+    </p>
+
+    <p>
+      The moment you download, install, register on, or in any manner use our App, you shall be deemed to be bound by all the
+      terms of this Privacy Policy. If you do not agree with any provision of this Policy, please immediately stop using the App
+      and uninstall it from your device.
+    </p>
+
+    <p>
+      Our App is a comprehensive digital platform for the farmers of India, the farming community, agricultural traders,
+      shopkeepers, tractor owners, seed and fertilizer sellers, and other stakeholders connected with agriculture. The purpose of
+      this App is to bring modern technology to farmers in simple language, to maintain a digital record of their agricultural
+      activities, to provide accurate mandi (market) prices, to assist in the identification of crop diseases, to provide
+      information about government schemes, and to promote mutual cooperation and dialogue among farmers. Since the nature of the
+      App is multi-dimensional, we collect different categories of information for different purposes, and in this Policy we set
+      out a detailed, clear and honest description of each category of information.
+    </p>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="card" id="p2">
+    <h2><span class="badge">2</span> About Us and How to Contact Us</h2>
+
+    <p>
+      Our organisation is <strong>Prime Code Studio</strong>, a software development entity registered in India, and the owner,
+      operator and <strong>Data Controller</strong> of the Kisan FarmTrack App. The package name of the App is
+      <strong>com.farmtrack.kisan</strong> and it is distributed on the Google Play Store in India.
+    </p>
+
+    <p>
+      For any question, complaint, request or suggestion relating to privacy, you may email us at
+      <a class="inline" href="mailto:support.primecodestudio@gmail.com">support.primecodestudio@gmail.com</a>. We endeavour to
+      respond to every valid request within <strong>thirty (30) working days</strong>.
+    </p>
+
+    <p>
+      All data control, processing and storage relating to this App is the responsibility of Prime Code Studio, and in the event
+      of any dispute, the jurisdiction shall vest in the courts of the State of Chhattisgarh, as clearly stated in the concluding
+      sections of this Policy.
+    </p>
+  </section>
+
+  <!-- Section 3 -->
+  <section class="card" id="p3">
+    <h2><span class="badge">3</span> Acceptance of and Consent to This Policy</h2>
+
+    <p>
+      When you begin using our App, you voluntarily, with full mental capacity and without any coercion, consent to all the
+      provisions set out in this Privacy Policy. If you are under eighteen years of age, you should use this App only under the
+      supervision of your parents or legal guardian and should not provide any personal information without their consent.
+    </p>
+
+    <p>
+      When you register, log in, create a profile, upload photos or videos, record financial transactions, grant location
+      permission, or use any feature of the App, it shall be deemed that you have read, understood and accepted this Policy.
+    </p>
+  </section>
+
+  <!-- Section 4 -->
+  <section class="card" id="p4">
+    <h2><span class="badge">4</span> What Information We Collect</h2>
+
+    <p>
+      Our App offers a wide range of features, and the operation of each feature requires different types of information. Below
+      we provide a detailed description of each category of information.
+    </p>
+
+    <h3>4.1 Personal Identification Information</h3>
+    <p>
+      When you register on the App, we collect your full name, ten-digit mobile number, optionally a Gmail address, and the
+      password chosen by you. If you log in using <strong>Google Sign-In</strong>, we receive your name, profile photo and email
+      address from your Google account. This information is stored securely in our <strong>Firebase Firestore</strong> database and
+      is used to establish the identity of your account, to provide you with a secure login facility, and to link the content
+      created by you to you. Your mobile number serves as the primary identifier for us and is used for OTP verification, account
+      recovery, and for sending essential notifications.
+    </p>
+
+    <h3>4.2 Location Information</h3>
+    <p>
+      Our App collects information about your location for a number of features. When you fill in the State, District, Tehsil,
+      Block and Village information in your profile, this information is stored on our servers and is used to show you nearby
+      mandi prices, local weather, nearby shops, local advertisements, and farmer discussions from your area. In addition, when
+      you capture a GPS location in the <strong>Land Measure</strong> feature and in the <strong>Tractor Diary</strong>, we obtain
+      precise location from your device's GPS sensor in the form of latitude and longitude. This location data is used to measure
+      the boundary of your field, to record the location of tractor work, and to create map links for reaching the customer's
+      field. Location information is collected only when you yourself grant the relevant permission and use the relevant feature.
+    </p>
+
+    <h3>4.3 Financial and Transaction Information</h3>
+    <p>
+      Our App provides a number of financial tools for farmers, including the <strong>Udhaari Khata (Credit Ledger)</strong>,
+      <strong>Interest Calculator</strong>, <strong>Mandi Calculator</strong>, <strong>Shop Bill</strong>,
+      <strong>Global Budget</strong>, <strong>Tractor Diary</strong>, and <strong>Currency Calculator</strong>. When you use these
+      features, we collect the financial information entered by you, such as the name of the person giving or taking credit, mobile
+      number, village, amount, rate of interest, date, description, payment status; the name of the crop sold in the mandi,
+      quantity, rate, details of deductions; the list of items included in a shop bill, the customer's name and contact details;
+      the details of tractor work, customer information, diesel expenses, wages, and payment status.
+    </p>
+    <p>
+      All of this information is stored securely in the local <strong>SQLite database</strong> on your device and, optionally, in
+      your Firebase account under your private collection. The purpose of this information is solely to provide you with the
+      facility of maintaining your financial records, and this information is not shared with any other user or third party. The
+      confidentiality of this information is fully maintained and it is displayed only on the device authorised by you.
+    </p>
+
+    <h3>4.4 Media and Content Information</h3>
+    <p>
+      When you upload your profile photo, cover photo, videos or photos in Kisan Charcha (the farmer forum), product photos in the
+      Digital Mandi, shop photos, shop product photos, or screenshots in a support ticket, we collect that media content. Before
+      upload, this content is <strong>compressed</strong> on your device and then stored on a secure cloud storage service called
+      <strong>Cloudflare R2</strong>. A public link is created for each media file, which is saved in our Firebase Firestore
+      database. When you upload a video, we also generate a <strong>thumbnail</strong> from it so that it loads quickly in grid
+      view. We use your media content only to operate the relevant feature of the App and make no other commercial use of it.
+    </p>
+
+    <h3>4.5 Communication and Social Information</h3>
+    <p>
+      When you post in the App's <strong>Kisan Charcha (Forum)</strong> feature, we collect the message written by you, the
+      caption, the crop name, your name, profile photo, and your location information (State, District, Tehsil). When you follow
+      another farmer, we maintain a list of following and followers. When you block someone, we keep the blocked list secure. When
+      you like, comment on, or share a post, we keep a record of that activity. In addition, we collect the relevant information
+      in order to send you notifications of likes and comments from other farmers. In the support ticket feature, when you record
+      a problem, we keep a record of the description of your problem, the attached screenshots, and all conversations.
+    </p>
+
+    <h3>4.6 Device and Technical Information</h3>
+    <p>
+      For the operation, security and improvement of the App, we collect certain technical information relating to your device.
+      This includes the manufacturer and model name of your device, the version of the Android operating system, the App version
+      number (Version Code), the device's unique identification number (<strong>Android ID</strong>), and the
+      <strong>Firebase Cloud Messaging token (FCM Token)</strong>. This technical information helps us maintain the functionality
+      of the App, analyse errors, detect security incidents, and send appropriate notifications to your device. We do not use this
+      information to establish your personal identity; rather, we use it only for overall technical analysis and security.
+    </p>
+
+    <h3>4.7 App Usage Information</h3>
+    <p>
+      In order to understand which features of our App farmers use the most, we collect certain aggregate usage information. This
+      includes the name of the screen viewed by you, the number of times a particular feature is used, the duration of an App
+      session, and counts of activities such as disease searches and viewing of government schemes. This information is collected
+      in a purely <strong>anonymised</strong> form and its purpose is only to understand the performance of the App and to add
+      better features in the future. We do not use this information to identify any particular user.
+    </p>
+
+    <h3>4.8 OTP and Verification Information</h3>
+    <p>
+      When you use an OTP for registration or password recovery, we keep a count of OTP usage based on your mobile number. This
+      includes the number of OTPs sent per day, the number of OTPs sent per month, the total number of OTPs sent over the lifetime,
+      the date on which the last OTP was sent, the number of incorrect OTP attempts, and the blocked status. This information is
+      necessary to prevent misuse of OTPs, to maintain security, and to detect suspicious activity. This information is stored
+      securely, linked to your mobile number and your device's unique identification number.
+    </p>
+
+    <h3>4.9 Referral Information</h3>
+    <p>
+      When you invite other farmers to use the App, we collect your referral code, the number of invitations sent by you, the
+      number of successful invitations, and information about the reward points earned by you. When a new farmer joins the App
+      through your referral code, we record that new farmer's name, mobile number and time of joining. The purpose of this
+      information is to operate the referral programme, distribute rewards, and measure the effectiveness of the programme.
+    </p>
+
+    <h3>4.10 Support and Feedback Information</h3>
+    <p>
+      When you contact our support centre, we collect the description of your problem, the screenshots sent by you, and the entire
+      chain of conversation. When you give a rating for the App, we collect the rating given by you, the feedback written by you,
+      and the time of the rating. If you give a four or five star rating, we direct you to rate the App on the Google Play Store,
+      and if you give a lower rating, we seek detailed feedback from you so that we can improve the App.
+    </p>
+  </section>
+
+  <!-- Section 5 -->
+  <section class="card" id="p5">
+    <h2><span class="badge">5</span> How We Collect Information</h2>
+
+    <p>We collect your information mainly in three ways.</p>
+
+    <ol>
+      <li>
+        <strong>Information you provide yourself</strong> — such as filling in a registration form, updating your profile, adding a
+        credit record, creating a bill, uploading a photo, or posting in the forum.
+      </li>
+      <li>
+        <strong>Information collected automatically through permissions</strong> — when you grant the App specific permissions,
+        such as camera permission, location permission or notification permission, the App automatically collects the relevant
+        information.
+      </li>
+      <li>
+        <strong>Information received from Google</strong> — when you use Google Sign-In, Google provides us with your name, email
+        and profile photo on the basis of your permission.
+      </li>
+    </ol>
+
+    <p>
+      In every case, we obtain your explicit consent before collecting information, and you have the right to withdraw your
+      consent at any time.
+    </p>
+  </section>
+
+  <!-- Section 6 -->
+  <section class="card" id="p6">
+    <h2><span class="badge">6</span> How We Use Your Information</h2>
+
+    <p>We use your information for the following purposes:</p>
+
+    <ol>
+      <li>To create your account, maintain its security, and provide you with a secure login facility.</li>
+      <li>
+        To operate all the features of the App — such as maintaining a record of your crops, keeping an account of your financial
+        transactions, measuring your land, keeping a record of your tractor work, and displaying your shop or business online.
+      </li>
+      <li>
+        To show you accurate mandi prices, local weather, nearby shops, and local farmer discussions based on your location.
+      </li>
+      <li>To send you important notifications, alerts and updates from time to time.</li>
+      <li>
+        To detect technical problems in the App, fix errors, and improve the functionality and security of the App.
+      </li>
+      <li>To resolve your complaints and suggestions and to provide you with better support.</li>
+      <li>To comply with legal obligations and to cooperate in any legal process.</li>
+      <li>
+        To understand overall trends in App usage and to add better features in the future.
+      </li>
+    </ol>
+  </section>
+
+  <!-- Section 7 -->
+  <section class="card" id="p7">
+    <h2><span class="badge">7</span> Rules for Sharing Information</h2>
+
+    <p>
+      We do not sell your personal information to any third party, nor do we share it for commercial gain. However, in certain
+      circumstances we may need to share your information, and those circumstances are as follows:
+    </p>
+
+    <ol>
+      <li>
+        <strong>When you yourself share information in a public feature of the App</strong> — such as posting in Kisan Charcha,
+        placing an advertisement in the Digital Mandi, or creating a shop profile; such information is visible to other users.
+      </li>
+      <li>
+        <strong>When we work with technical service providers</strong> — such as Google Firebase (database, authentication, cloud
+        functions, messaging service, crash reporting, analytics), Cloudflare R2 (media storage), Google AdMob (advertising),
+        Google Play Billing (payments), and Open-Meteo (weather data). These service providers receive access to the minimum
+        information necessary to provide the service to us and they act subject to their own privacy policies.
+      </li>
+      <li>
+        <strong>When legally compelled</strong> — such as under a court order, a request from a government agency, or under legal
+        process.
+      </li>
+      <li>
+        <strong>When we believe disclosure is necessary</strong> to prevent fraud, a security breach, or any other unlawful
+        activity.
+      </li>
+      <li>
+        <strong>In the event of a merger, acquisition or reorganisation of our business</strong> — in such a case, user
+        information may be transferred to the relevant entity, but even in that situation this Policy shall continue to apply.
+      </li>
+    </ol>
+  </section>
+
+  <!-- Section 8 -->
+  <section class="card" id="p8">
+    <h2><span class="badge">8</span> Third-Party Services and Their Privacy Policies</h2>
+
+    <p>
+      Our App uses a number of third-party services that provide us with technical support. <strong>Google Firebase</strong> is our
+      primary backend service provider, offering the Firestore database, Firebase Authentication, Cloud Functions, Cloud Messaging,
+      Crashlytics and Analytics. <strong>Cloudflare R2</strong> is responsible for the storage of our media files.
+      <strong>Message Central</strong> services are being used for mobile number verification. <strong>Google AdMob</strong> helps
+      us display advertisements so that we can keep the App free of cost. <strong>Google Play Billing</strong> is used for payment
+      for VIP advertisements. <strong>Open-Meteo</strong> provides weather-related data. <strong>Google Sign-In</strong> provides
+      authentication functionality.
+    </p>
+
+    <p>
+      Each service provider has its own privacy policy and terms of service, and we advise you to read their policies as well. We
+      are not responsible for any activity carried out by these service providers, as they are independent entities and act in
+      accordance with their own policies.
+    </p>
+  </section>
+
+  <!-- Section 9 -->
+  <section class="card" id="p9">
+    <h2><span class="badge">9</span> Storage and Security of Information</h2>
+
+    <p>
+      We use industry-standard security measures to keep your information safe. Your information is stored on Google's secure
+      Firebase servers, which are protected by automatic encryption, rule-based access control, and multi-layered security. Media
+      files are kept on Cloudflare R2's secure storage. Your information can be accessed only by you yourself or through
+      authorised administrators. We take reasonable technical and organisational measures for the security of your information;
+      however, we cannot guarantee that any transmission over the internet is completely secure.
+    </p>
+
+    <p>
+      If a security breach occurs that creates a high risk to your rights and freedoms, we will notify you and the relevant
+      authority in accordance with applicable law.
+    </p>
+  </section>
+
+  <!-- Section 10 -->
+  <section class="card" id="p10">
+    <h2><span class="badge">10</span> Information Retention Period</h2>
+
+    <p>
+      We retain your personal information for as long as your account is active or as long as is necessary for legal, tax,
+      accounting or regulatory reasons. When you delete your account, we endeavour to delete your personal information promptly;
+      however, certain information may be retained for an additional period for legal compliance.
+    </p>
+
+    <p>
+      Records of financial transactions, support tickets, and legally significant information may be retained for up to seven
+      years, as required by applicable law. Screen views and anonymised usage information may be retained by us indefinitely,
+      because they do not reveal the identity of any person.
+    </p>
+  </section>
+
+  <!-- Section 11 -->
+  <section class="card" id="p11">
+    <h2><span class="badge">11</span> Your Rights</h2>
+
+    <p>
+      You have a number of rights reserved with you in relation to your personal information:
+    </p>
+
+    <ul>
+      <li>You have the right to know what information we are collecting about you and how we are using it.</li>
+      <li>You have the right to correct your information if it is incorrect or incomplete.</li>
+      <li>
+        You have the right to request deletion of your information; however, in certain situations we will not be able to do so
+        for legal reasons.
+      </li>
+      <li>
+        You have the right to withdraw your consent at any time, following which we will cease using your information.
+      </li>
+      <li>You have the right to obtain a copy of your information.</li>
+      <li>You have the right to object to our processing of your data.</li>
+    </ul>
+
+    <p>
+      To exercise these rights, you may send an email to
+      <a class="inline" href="mailto:support.primecodestudio@gmail.com">support.primecodestudio@gmail.com</a>, and we will
+      endeavour to respond within <strong>thirty (30) working days</strong>. For the exercise of certain rights, we may require
+      identity verification from you so that the security of your information can be ensured.
+    </p>
+  </section>
+
+  <!-- Section 12 -->
+  <section class="card" id="p12">
+    <h2><span class="badge">12</span> Children's Privacy</h2>
+
+    <p>
+      Our App is designed primarily for farmers, agricultural traders, and adult users connected with agriculture. We do not
+      knowingly collect any personal information from children under the age of thirteen. If we become aware that we have
+      collected personal information from a child under the age of thirteen, we will take appropriate steps to delete it
+      immediately. If you are a parent and you believe that your child has provided information to us, please contact us.
+    </p>
+  </section>
+
+  <!-- Section 13 -->
+  <section class="card" id="p13">
+    <h2><span class="badge">13</span> Permissions</h2>
+
+    <p>
+      Our App uses certain specific permissions that are necessary for the functionality of the App:
+    </p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Permission</th>
+            <th>Purpose for Which It Is Used</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Camera</strong></td>
+            <td>To take photographs and record videos.</td>
+          </tr>
+          <tr>
+            <td><strong>Location</strong></td>
+            <td>To measure fields, record the location of tractor work, and display local information.</td>
+          </tr>
+          <tr>
+            <td><strong>Phone</strong></td>
+            <td>To place direct calls to shopkeepers, customers or other farmers.</td>
+          </tr>
+          <tr>
+            <td><strong>Notifications</strong></td>
+            <td>To send you important alerts and updates.</td>
+          </tr>
+          <tr>
+            <td><strong>Internet</strong></td>
+            <td>For data sync and cloud services.</td>
+          </tr>
+          <tr>
+            <td><strong>Vibration</strong></td>
+            <td>For light haptic feedback.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      Each permission is used only for the purpose for which it was requested, and you have the right to revoke these permissions
+      at any time.
+    </p>
+  </section>
+
+  <!-- Section 14 -->
+  <section class="card" id="p14">
+    <h2><span class="badge">14</span> Changes to This Privacy Policy</h2>
+
+    <p>
+      We may update this Privacy Policy from time to time. Whenever there is any significant change, we will notify you through
+      the App or by email and will publish the new policy on this page. If you continue to use the App after the publication of
+      an updated version of the Policy, it shall be deemed that you agree to the new Policy. We advise you to keep checking this
+      page from time to time so that you remain informed of the latest information.
+    </p>
+  </section>
+
+  <!-- ================= PART II ================= -->
+  <div class="part-divider" id="part2">
+    <p class="eyebrow">Part Two</p>
+    <h2>Kisan FarmTrack — Terms and Conditions</h2>
+    <p>Terms and Conditions governing the use of the Kisan FarmTrack application.</p>
+  </div>
+
+  <!-- Terms Section 1 -->
+  <section class="card" id="t1">
+    <h2><span class="badge">1</span> Definitions and Interpretation</h2>
+
+    <p>
+      In these Terms and Conditions, the term <strong>"App"</strong> means the Kisan FarmTrack mobile application. The terms
+      <strong>"we", "our", "us"</strong> and <strong>"Company"</strong> mean Prime Code Studio. The terms
+      <strong>"you", "your", "User"</strong> and <strong>"farmer"</strong> mean the person who downloads, installs or uses the App.
+      The term <strong>"Services"</strong> means all the features provided by the App, including Kisan Diary, Udhaari Khata
+      (Credit Ledger), Mandi Calculator, Bill Calculator, Tractor Diary, Land Measure, Seed Calculator, Interest Calculator,
+      Currency Calculator, Age Calculator, Shopping List, Digital Mandi, Kisan Charcha, Government Schemes, Crop Knowledge
+      Repository, Disease Identification, Live Weather, Nearby Shops, and all other present and future features.
+    </p>
+  </section>
+
+  <!-- Terms Section 2 -->
+  <section class="card" id="t2">
+    <h2><span class="badge">2</span> Acceptance of Terms</h2>
+
+    <p>
+      By using the App, you agree to be bound by these Terms and Conditions. If you do not agree with these terms, you should not
+      use the App. These Terms and Conditions constitute a legal contract between you and Prime Code Studio. You confirm that you
+      have the legal capacity to accept these terms and that you are doing so without any coercion, fraud or misrepresentation.
+    </p>
+  </section>
+
+  <!-- Terms Section 3 -->
+  <section class="card" id="t3">
+    <h2><span class="badge">3</span> Eligibility and Qualification</h2>
+
+    <p>
+      To use the App, you must be at least eighteen years of age, or must be under the consent and supervision of your parents or
+      legal guardian. You must be a resident of India or be legally authorised to operate in India. You must not use the App as a
+      person who has previously been convicted of any offence or who is legally prohibited from using such services. You must
+      comply with all applicable laws, regulations and government policies while using the App.
+    </p>
+  </section>
+
+  <!-- Terms Section 4 -->
+  <section class="card" id="t4">
+    <h2><span class="badge">4</span> Account Registration and Security</h2>
+
+    <p>
+      To use most features of the App, you will need to create an account. When creating an account, you must provide correct,
+      complete and current information. You are fully responsible for maintaining the confidentiality of your account credentials.
+      You must not share your password with any other person. You are responsible for all activities that take place through your
+      account. If you become aware of any unauthorised use of your account, you must notify us immediately.
+    </p>
+
+    <p>
+      We reserve the right to temporarily suspend or permanently close your account in the event of any suspicious activity.
+    </p>
+  </section>
+
+  <!-- Terms Section 5 -->
+  <section class="card" id="t5">
+    <h2><span class="badge">5</span> User Responsibilities</h2>
+
+    <p>While using the App, you are bound by the following responsibilities:</p>
+
+    <ul>
+      <li>You must use the App only for lawful purposes.</li>
+      <li>
+        You must not use the App to violate the privacy of any other person, to harass them, to intimidate them, or to spread
+        hatred against them.
+      </li>
+      <li>
+        You must not upload any false, misleading, abusive, obscene, unlawful, or copyright-infringing content on the App.
+      </li>
+      <li>You must not attempt to gain unauthorised access to the technical systems of the App.</li>
+      <li>You must not attempt to deceive or defraud any other user through the App.</li>
+      <li>
+        You must not accept any information displayed on the App as true without verification.
+      </li>
+    </ul>
+  </section>
+
+  <!-- Terms Section 6 -->
+  <section class="card" id="t6">
+    <h2><span class="badge">6</span> Acceptable Use and Restrictions</h2>
+
+    <p>You may not use the App for the following purposes:</p>
+
+    <ul>
+      <li>
+        You may not use the App for any unlawful activity, such as drug trafficking, the sale of arms, human trafficking, or any
+        other criminal activity.
+      </li>
+      <li>You may not use the App to infringe the intellectual property of any other person.</li>
+      <li>
+        You may not use the App to spread spam, phishing, malware, viruses, or any other harmful content.
+      </li>
+      <li>
+        You may not use the App to collect or share the personal information of any other user.
+      </li>
+      <li>You may not attempt to bypass or break the security systems of the App.</li>
+      <li>
+        You may not use the App to develop a competing product or to carry out espionage against it.
+      </li>
+    </ul>
+  </section>
+
+  <!-- Terms Section 7 -->
+  <section class="card" id="t7">
+    <h2><span class="badge">7</span> Content Rules and Responsibility</h2>
+
+    <p>
+      You are fully responsible for all content uploaded by you on the App, including text, photos, videos, comments, and other
+      content. You confirm that you hold all necessary rights to upload that content and that it does not infringe the rights of
+      any third party.
+    </p>
+
+    <p>
+      We reserve the right to remove any content without any prior notice if it violates these terms or violates any law. We are
+      not liable for any damage, loss, or legal liability arising from content uploaded by you. If any claim is made by a third
+      party in relation to your content, the entire responsibility shall be yours, and you agree to indemnify us against any
+      damage of any kind.
+    </p>
+  </section>
+
+  <!-- Terms Section 8 -->
+  <section class="card" id="t8">
+    <h2><span class="badge">8</span> Intellectual Property Rights</h2>
+
+    <p>
+      The entire design, code, graphics, logos, trademarks, text, and all other content of the App are the intellectual property
+      of Prime Code Studio and are protected under the Indian Copyright Act, the Trademarks Act, and other related laws. You have
+      no right to copy, modify, distribute, publish, sell, rent, or create derivative works from any content of the App. You have
+      the right to use the App only for personal and non-commercial purposes. If you wish to use any content of the App, you must
+      obtain our prior written permission.
+    </p>
+  </section>
+
+  <!-- Terms Section 9 -->
+  <section class="card" id="t9">
+    <h2><span class="badge">9</span> Third-Party Services and Content</h2>
+
+    <p>
+      The App may include links to and content from third-party services, including advertisements, links to government schemes,
+      links to external websites, and other third-party content. We accept no responsibility of any kind for these third-party
+      services and content. You use these links at your own risk, and we advise you to read the privacy policy and terms of
+      service of any external link before visiting it. We do not provide any guarantee as to the quality, reliability or
+      availability of services provided by any third party.
+    </p>
+  </section>
+
+  <!-- Terms Section 10 -->
+  <section class="card" id="t10">
+    <h2><span class="badge">10</span> Payments and Refunds</h2>
+
+    <p>
+      Certain premium features are available in the App, including VIP advertising packages. Payment for these features is made
+      through <strong>Google Play Billing</strong> and is subject to Google's policies. We are not directly involved in the
+      payment process, and for any payment-related issue we advise you to contact the Google Play Store.
+    </p>
+
+    <p>
+      Once a payment has been made, it is generally not refunded, except in situations where a refund is permissible under
+      Google's policies. If a service purchased by you cannot be provided due to a technical problem, we will endeavour to provide
+      an appropriate resolution.
+    </p>
+  </section>
+
+  <!-- Terms Section 11 -->
+  <section class="card" id="t11">
+    <h2><span class="badge">11</span> Special Terms for the VIP Advertising Service</h2>
+
+    <p>While using the VIP advertising service, you must comply with the following special terms:</p>
+
+    <ul>
+      <li>You may advertise only lawful businesses, products or services.</li>
+      <li>
+        You may not advertise any product or service that is unlawful in India, such as narcotics, arms, gambling, or any other
+        prohibited item.
+      </li>
+      <li>
+        The information given in your advertisement must be true, accurate, and not misleading.
+      </li>
+      <li>
+        We reserve the right to reject or remove any advertisement without stating a reason.
+      </li>
+      <li>
+        After the validity period of the advertising package expires, the advertisement is automatically removed.
+      </li>
+      <li>
+        If any third party suffers any loss as a result of any advertisement, the entire responsibility shall lie with the
+        advertiser, and we shall not be liable for any damage of any kind.
+      </li>
+    </ul>
+  </section>
+
+  <!-- Terms Section 12 -->
+  <section class="card" id="t12">
+    <h2><span class="badge">12</span> Service Availability and Changes</h2>
+
+    <p>
+      We endeavour to keep all the features of the App available as far as possible; however, we do not guarantee the continuous
+      availability of any feature. We may add, change, suspend or remove any feature without any prior notice. We may temporarily
+      shut down the services of the App for technical maintenance, server updates, or other reasons. We shall not be liable for any
+      damage or compensation of any kind for any such interruption or discontinuation of service.
+    </p>
+  </section>
+
+  <!-- Terms Section 13 -->
+  <section class="card" id="t13">
+    <h2><span class="badge">13</span> Disclaimer</h2>
+
+    <p>
+      All information provided in the App, including crop knowledge, disease identification, government schemes, mandi prices,
+      weather information, and all other content, is provided for general informational and educational purposes only. This
+      information is not a substitute for professional agricultural advice, legal advice, financial advice, or medical advice of
+      any kind. Before making any agricultural decision, you should consult a qualified expert in the relevant field.
+    </p>
+
+    <p>
+      We do not provide any guarantee that the information given in the App is complete, correct, up to date, or error-free.
+      Weather-related information is obtained from third-party sources and is not guaranteed to be accurate. Mandi price
+      information is provided by other farmers and may differ from the actual market price. Disease identification information is
+      only an aid and should not be used as a substitute for professional agricultural consultation.
+    </p>
+  </section>
+
+  <!-- Terms Section 14 -->
+  <section class="card" id="t14">
+    <h2><span class="badge">14</span> Limitation of Liability</h2>
+
+    <div class="callout important">
+      <span class="ct">⚠ Important — Please Read Carefully</span>
+      <p>This section is extremely important and should be read with attention.</p>
+    </div>
+
+    <p>
+      Under no circumstances, whether based on contract, tort, negligence, strict liability, or any other legal principle, shall
+      Prime Code Studio, its directors, officers, employees, agents, affiliates, or licensors be liable to you for any special,
+      incidental, indirect, punitive, or consequential damages. This includes, without limitation — loss of profits, loss of
+      revenue, loss of data, loss of business, loss of goodwill, loss of use, or any other kind of economic or non-economic loss —
+      whether or not we were previously informed of the possibility of such damage.
+    </p>
+
+    <p>
+      Our total cumulative liability, arising from any cause whatsoever, shall in no circumstance exceed
+      <strong>five hundred rupees (₹500/-)</strong>. This limit applies to all types of claims, suits, or proceedings, whether
+      arising now or in the future.
+    </p>
+
+    <p>
+      This limit applies to your use of the App, reliance on any information provided in the App, interruption of any feature of
+      the App, any error in the App, any payment made through the App, or any other matter relating to the App. This limit applies
+      to all claims arising under this Policy, regardless of their basis.
+    </p>
+
+    <p>
+      This provision is valid and enforceable in accordance with the Indian Contract Act, 1872, the Consumer Protection Act, 2019,
+      and all other applicable laws. If, in any jurisdiction, it is not possible to enforce such a limitation, this section shall
+      be limited in that jurisdiction to the minimum permissible extent. This limitation places all risks relating to the use of
+      the App upon you, and you expressly agree to this condition.
+    </p>
+  </section>
+
+  <!-- Terms Section 15 -->
+  <section class="card" id="t15">
+    <h2><span class="badge">15</span> Indemnification</h2>
+
+    <p>
+      You agree that you shall indemnify, defend, and hold harmless Prime Code Studio, its directors, officers, employees, agents,
+      affiliates, and licensors from and against any and all claims, suits, proceedings, losses, damages, liabilities, costs, and
+      expenses (including reasonable attorney's fees).
+    </p>
+
+    <p>
+      This indemnification applies to all claims arising from your breach of these terms, your improper use of the App, any content
+      uploaded by you, your infringement of the rights of any third party, or any unlawful act on your part. This indemnification
+      also applies to any mistake, negligence, or intentional act committed by you during your use of the App.
+    </p>
+  </section>
+
+  <!-- Terms Section 16 -->
+  <section class="card" id="t16">
+    <h2><span class="badge">16</span> Account Suspension and Termination</h2>
+
+    <p>
+      We reserve the right to temporarily suspend or permanently terminate your account without any prior notice and without
+      stating any reason. This may be done when we believe that you have breached these terms, violated any applicable law,
+      violated the rights of any other user, or engaged in any activity that is harmful to our interests.
+    </p>
+
+    <p>
+      In the event of account termination, all your information will be deleted and you will lose access to all features of the
+      App. You have the right to delete your account voluntarily at any time, and you may do so by going to the App's settings or
+      by contacting us.
+    </p>
+  </section>
+
+  <!-- Terms Section 17 -->
+  <section class="card" id="t17">
+    <h2><span class="badge">17</span> Governing Law and Jurisdiction</h2>
+
+    <p>
+      These Terms and Conditions are governed by and shall be construed in accordance with the laws of India. All disputes, claims
+      or differences arising out of these terms shall be subject to the exclusive jurisdiction of the courts of the State of
+      Chhattisgarh, India.
+    </p>
+
+    <p>
+      Whatever the cause of the dispute — whether relating to contract, tort, or any other legal basis — it shall be resolved only
+      by the competent courts of the State of Chhattisgarh. You expressly agree that you will not take any dispute arising out of
+      these terms to any court other than the courts of the State of Chhattisgarh.
+    </p>
+
+    <p>
+      This jurisdiction clause applies irrespective of which State of India or which country you are located in, or from where you
+      have used the App. This provision is valid in accordance with the Indian Code of Civil Procedure, 1908, and all other
+      applicable laws.
+    </p>
+  </section>
+
+  <!-- Terms Section 18 -->
+  <section class="card" id="t18">
+    <h2><span class="badge">18</span> Dispute Resolution Process</h2>
+
+    <p>
+      Any dispute arising under this Policy shall first be sought to be resolved through friendly negotiation. If the dispute
+      cannot be resolved within <strong>thirty (30) days</strong> of negotiation, it may be referred to mediation. The mediation
+      process shall be conducted in accordance with the <strong>Arbitration and Conciliation Act, 1996</strong> of India.
+    </p>
+
+    <p>
+      If mediation also fails, the dispute shall be brought before the competent courts of the State of Chhattisgarh. At all
+      stages of this process, the English language shall be used and Indian law shall apply. During the entire dispute resolution
+      process, you may continue to use the App; however, if the seriousness of the dispute is high, we may temporarily suspend
+      your account.
+    </p>
+  </section>
+
+  <!-- Terms Section 19 -->
+  <section class="card" id="t19">
+    <h2><span class="badge">19</span> Notices and Contact</h2>
+
+    <p>
+      All notices relating to this Policy, whether from us or from you, must be in writing. Notices from our side may be sent
+      through the App, by email, or by post to the address provided by you. Notices from your side must be sent by email to
+      <a class="inline" href="mailto:support.primecodestudio@gmail.com">support.primecodestudio@gmail.com</a>.
+    </p>
+
+    <p>
+      A notice shall be deemed to have been received within <strong>seven (7) days</strong> of the date of sending. If you change
+      your contact information, you must notify us immediately; otherwise, a notice sent to the old information shall be deemed
+      valid.
+    </p>
+  </section>
+
+  <!-- Terms Section 20 -->
+  <section class="card" id="t20">
+    <h2><span class="badge">20</span> Other Provisions</h2>
+
+    <p>
+      If any provision of this Policy is found to be illegal, void, or unenforceable in any jurisdiction, that provision shall to
+      that extent be severed and the remaining provisions shall remain fully in force.
+    </p>
+
+    <p>
+      No provision of this Policy shall be deemed to have been waived by any party on the basis of any act or failure to act. This
+      Policy represents the entire understanding between you and Prime Code Studio and supersedes all previous agreements,
+      negotiations, and proposals. No term of this Policy may be modified by any other document unless such modification is
+      accepted by us in writing. All headings in this Policy are for convenience only and should not be used to interpret the
+      Policy.
+    </p>
+  </section>
+
+  <!-- Terms Section 21 -->
+  <section class="card" id="t21">
+    <h2><span class="badge">21</span> Final Provision and Acceptance</h2>
+
+    <p>
+      After carefully reading this Privacy Policy and these Terms and Conditions, if you continue to use the App, it shall be
+      deemed that you have read, understood, and accepted all of these provisions. If you do not agree with any of these
+      provisions, please immediately stop using the App and remove it from your device.
+    </p>
+
+    <p>
+      These terms will not be enforced against you without your consent; however, continuing to use the App itself shall be
+      treated as proof of your consent. We are committed to empowering Indian agriculture together with our farmer brothers and
+      sisters, and we hope that this App will bring a positive change in your life.
+    </p>
+
+    <p class="closing">Jai Jawan, Jai Kisan. 🌾</p>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="contact-card" id="contact">
+    <h2>Contact Us</h2>
+    <p>
+      For any questions, requests or concerns regarding this Privacy Policy or these Terms and Conditions,
+      please reach out to us. We aim to respond within 30 working days.
+    </p>
+    <a class="mail" href="mailto:support.primecodestudio@gmail.com">support.primecodestudio@gmail.com</a>
+    <div class="org">
+      <strong>Prime Code Studio</strong><br />
+      Owner, Operator &amp; Data Controller — Kisan FarmTrack<br />
+      Registered Office: State of Chhattisgarh, India
+    </div>
+  </section>
+
+  <footer class="doc-footer">
+    <p>
+      <strong>Kisan FarmTrack</strong> — Privacy Policy &amp; Terms and Conditions<br />
+      Last Updated: <strong>24 September 2026</strong> &nbsp;•&nbsp; Effective Date: <strong>25 September 2026</strong>
+      &nbsp;•&nbsp; Version: <strong>1.1</strong>
+    </p>
+    <p>© 2026 Prime Code Studio. All rights reserved.</p>
+  </footer>
+
+</div>
+
+<a class="to-top" href="#" aria-label="Back to top" title="Back to top">↑</a>
+
 </body>
 </html>
